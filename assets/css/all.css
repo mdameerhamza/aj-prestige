@@ -1,0 +1,10421 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: #fff;
+    color: #0F1F35;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ol,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* styling scrolbar */
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #F2F2F2;
+    border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #1C3352;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #0085FF;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+h1 {
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h5 {
+    color: #1A1A1F;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    /* 131.818% */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    opacity: 0.6;
+}
+
+
+
+.primary-btn {
+    position: relative;
+    display: inline-flex;
+    width: 133px;
+    height: 42px;
+}
+
+
+.primary-button {
+    position: absolute;
+    border: 1px solid #1C3352;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.primary-button:before {
+    content: '';
+    background: #fff;
+    height: 100%;
+    width: 0;
+    z-index: 0;
+    position: absolute;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.primary-button:before {
+    top: 0;
+    left: 0;
+    right: auto;
+}
+
+.primary-button:hover:before {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+
+a.primary-button:hover span {
+    color: #1C3352;
+
+}
+
+.primary-button span {
+    color: #fff;
+    display: block;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    line-height: 15px;
+}
+
+.primary-button img {
+    transition: all 0.3s ease-in-out;
+}
+
+.primary-button:hover img {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(43%) saturate(631%) hue-rotate(170deg) brightness(100%) contrast(101%);
+}
+
+.right-inderies .primary-button {
+    position: absolute;
+    border: 1px solid #fff;
+    z-index: 0;
+}
+
+.right-inderies .primary-button:before {
+    content: '';
+    background: #0E1F35FA;
+    height: 100%;
+    width: 0;
+    z-index: 0;
+    position: absolute;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.right-inderies .primary-button:before {
+    top: 0;
+    left: 0;
+    right: auto;
+}
+
+.right-inderies .primary-button:hover:before {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+
+.right-inderies .primary-button:hover span {
+    color: #fff;
+
+}
+
+.right-inderies .primary-button span {
+    color: #0E1F35FA;
+    display: block;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.right-inderies .primary-button img {
+    transition: all 0.3s ease-in-out;
+}
+
+.right-inderies .primary-button:hover img {
+    filter: brightness(100%) contrast(120%) saturate(150%);
+}
+
+
+
+.small-heading {
+    color: #1C3352;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* main#main {
+    margin-top: 44px;
+} */
+
+
+
+
+/* *********************   header   ********************* */
+/* .bar-color{
+    position: fixed !important;
+    transition: all 0.4s ease-in-out !important;
+} */
+.default-logo {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+}
+
+body.active {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo img.animate {
+    opacity: 1;
+    animation: unset;
+}
+
+.footer-logo img.animate {
+    opacity: 1;
+    animation: unset;
+}
+
+.logo img {
+    height: 58px;
+    width: 193px;
+    /* object-fit: cover; */
+}
+
+.after-logo {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.scroll-nav .after-logo {
+    visibility: visible;
+    display: inline-block;
+    opacity: 1;
+}
+
+.scroll-nav .default-logo {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.mobile-menu-sss-icon {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.three.col {
+    position: absolute;
+}
+
+header#header {
+    position: fixed;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+}
+
+.top-header {
+    background: #1C3352;
+    padding: 12px 80px 12px 100px;
+    transition: all 0.3s ease-in-out;
+    height: 44px;
+}
+
+.header-contact-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-grp a {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-header {
+    padding: 12px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .4s ease-in-out;
+    height: 82px;
+}
+
+.logo {
+    width: 12%;
+}
+
+.navbar {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#menu-header-menu{
+	width: 55%;
+}
+.navbar>div>ul,
+.navbar>ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar li a {
+    /* font-family: 'Arial', sans-serif; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.scroll-nav .navbar li a {
+    color: #000;
+    transition: all .4s ease-in-out;
+}
+
+.scroll-nav.inner-header {
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    /* box-shadow: 0 0px 10px 0px rgba(28,51,82,1); */
+}
+
+.scroll-nav.inner-header .all-btn .btn {
+    background: #0F1F35;
+    color: #fff;
+}
+.scroll-nav.inner-header .all-btn .btn:hover{
+	background-color:#3b5c91;
+}
+.scroll-nav.inner-header .navbar .down-arrow img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(93%) contrast(104%);
+    transition: all .4s ease-in-out;
+}
+
+.top-header-animate {
+    height: 0px;
+    padding: 0 !important;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar li {
+    position: relative;
+    /* display: flex; */
+}
+
+/* .navbar li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    border-bottom: 2px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+    bottom: -12px;
+    background: #fff;
+} */
+
+
+.navbar .sub-menu li,
+.navbar .in-sub-menu li {
+    padding: 0 14px 0px;
+    display: flex;
+    align-items: center;
+    background: #F2F2F2;
+    margin-bottom: 18px;
+}
+
+.navbar .sub-menu li a {
+    padding: 10px 0 12px;
+    display: block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar .sub-menu li:before,
+.navbar .in-sub-menu li:before {
+    display: none;
+}
+
+/* .navbar .in-sub-menu {
+    transform: scale(0);
+} */
+/* .navbar .sub-menu li:hover {
+    background-color: #0F1F35;
+    transition: all .4s ease-in-out;
+}
+
+.navbar .sub-menu li:hover .right-arrow img {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.navbar .in-sub-menu li:hover {
+    background-color: #0F1F35;
+    transition: all .4s ease-in-out;
+}
+
+.navbar .sub-menu li:hover a {
+    color: #fff;
+}
+
+.navbar .in-sub-menu li:hover a {
+    color: #fff !important;
+} */
+
+/* .sub-menu>li.menu-background{
+    background: #142741 !important;
+} */
+ul.sub-menu>li.menu-background>a {
+    font-weight: 600;
+    color: #000;
+    opacity: 1;
+}
+
+.menu-background span {
+    transform: rotate(45deg);
+}
+
+
+.navbar .in-sub-menu li a {
+    padding: 9px 0 9px;
+    display: block;
+    border-bottom: 1px solid #ffffff1f;
+    color: #0F1F35 !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+/* .active:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-color: #fff;
+    border-bottom: 2px solid #fff;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+    bottom: 0;
+} */
+
+.navbar li:hover::before {
+    width: 100%;
+    border-color: #fff;
+}
+
+
+.down-arrow img {
+    transition: all .4s ease-in-out;
+}
+
+ul.nav-menu li>span {
+    display: inline-flex;
+    cursor: pointer;
+    /* padding-left: 5px; */
+    transition: all .4s ease-in-out;
+/*     position: absolute; */
+    right: -25px;
+    top: 10px;
+    width: 14px;
+    height: 7px;
+}
+.navbar ul#menu-header-menu > li:nth-child(3) ul.sub-menu {
+    width: 340px;
+    left: -100px;
+}
+.navbar ul#menu-header-menu > li:nth-child(2) ul.sub-menu {
+    width: 340px;
+    left: -100px;
+}
+ul.sub-menu li span {
+    display: inline-flex;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    right: 30px;
+    top: unset;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.inner-header .all-btn {
+    margin-top: 0;
+    display: inline-flex;
+    width: 9%;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+}
+.inner-header .all-btn.for-mobile {
+	display:none;
+}
+.inner-header .all-btn .btn {
+    padding: 15px 40px;
+    background: #fff;
+    border-radius: 36px;
+    color: #0F1F35;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+}
+.inner-header .all-btn .btn:hover{
+	 background: #0F1F35;;
+	color: #fff;
+}
+.right-arrow img {
+    background: #F2F2F2;
+    border-radius: 50px;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar-color {
+    background: #fff;
+}
+
+/* .menu-color {
+    color: #0F1F35 !important;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.icon-color {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(93%) contrast(104%);
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-color {
+    background: #0F1F35;
+    padding: 19px 40px;
+    border-radius: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+} */
+/* ul#menu-header-menu > li:hover span.down-arrow {
+    transform: rotatex(180deg);
+} */
+.navbar>.sub-menu {
+    position: relative;
+}
+
+.navbar .sub-menu>li {
+    position: static;
+}
+
+.overlay-element.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+
+.in-sub-menu {
+    transition: all 0.4s ease-in-out;
+    width: 260px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    padding: 24px 24px 6px 24px;
+    top: 0;
+    z-index: -1;
+}
+
+.navbar .in-sub-menu.visible {
+    background: #F2F2F2;
+    left: 0px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(100%);
+    width: 100%;
+    display: block !important;
+}
+
+/* *********************   footer   ********************* */
+.page-template-contact-us .page-contact-footer {
+	display:none;
+}
+
+
+/* footer#footer {
+    background: linear-gradient(180deg, #1C3352 0%, #0E1F35 100%);
+    padding-inline: 60px;
+} */
+footer#footer {
+    padding-inline: 60px;
+    background: #142741;
+}
+
+.footer-top h2 {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+    width: 40%;
+    text-transform: capitalize;
+}
+
+.newsletter-grp input {
+    padding: 15px 0;
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.newsletter-grp input::placeholder {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.footer-top {
+    display: flex;
+    align-items: end;
+    padding: 80px 40px 70px 60px;
+    justify-content: space-between;
+}
+
+.newsletter-grp {
+    width: 80%;
+    border-bottom: 2px solid #fff;
+}
+
+.newsletter-form {
+    width: 55%;
+}
+
+.newsletter-form button {
+    display: flex;
+    padding: 13px 30px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    background: transparent;
+    cursor: pointer;
+}
+
+.newsletter-form button[type="submit"] img {
+    width: 30px;
+    height: 30px;
+}
+
+.newsletter-form form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    color: #EDF5F4;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-middle {
+    padding: 70px 0 20px;
+    border-top: 1px solid #edf5f421;
+    border-bottom: 1px solid #edf5f421;
+
+}
+
+.footer-social-sec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo-sec {
+    width: 22%;
+}
+
+.quick-link {
+    width: 15%;
+}
+
+.get-in-touch {
+    width: 20%;
+}
+
+.social-icons {
+    width: 22%;
+}
+
+.quick-link a,
+.get-in-touch a {
+    color: #FFF;
+    /* font-family: 'Inter'; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.036px;
+    opacity: 0.7;
+}
+
+.quick-link h5,
+.get-in-touch h5,
+.social-icons h5 {
+    color: #fff;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+}
+
+.get-in-touch li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.quick-link li {
+    padding-bottom: 20px;
+}
+
+.footer-logo-sec p {
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    border-radius: 8px;
+    border: 1px solid var(--FFFFFF, #FFF);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons h5 {
+    text-align: center;
+}
+
+.footer-social-bottom-list a {
+    color: #EDF5F4;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.footer-social-bottom-list ul {
+    display: flex;
+    gap: 150px;
+    padding-inline: 160px;
+    justify-content: center;
+}
+
+.footer-social-bottom-list {
+    padding-top: 60px;
+}
+
+
+.footer-social-bottom-listtt {
+    display: none;
+}
+
+
+
+
+.client-tstmnl .swiper-button-prev:hover {
+    background-color: #0F1F35;
+}
+
+.client-tstmnl .swiper-button-prev:hover img {
+    filter: invert(50%) sepia(0%) saturate(7330%) hue-rotate(264deg) brightness(590%) contrast(330%);
+}
+.client-tstmnl .swiper-button-next:hover {
+    background-color: #0F1F35;
+}
+
+.client-tstmnl .swiper-button-next:hover img {
+    filter: invert(50%) sepia(0%) saturate(7330%) hue-rotate(264deg) brightness(590%) contrast(330%);
+}
+.social-iconsss.mobile-menu-sss-icon a img{
+	filter: brightness(1) invert(1) !important;
+}
+.social-iconsss a img {
+    width: 22px !important;
+    object-fit: contain !important;
+    filter: brightness(0) invert(1) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************   home   ********************* */
+
+.main-banner {
+    position: relative;
+}
+
+.banner-swiper {
+    height: 95vh;
+}
+
+
+.slider-image {
+    text-align: left;
+}
+
+.slider-name {
+    padding-top: 150px;
+    text-align: left;
+    padding-left: 100px;
+    color: #fff;
+}
+
+
+.slider-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+
+
+
+
+section.feature-services {
+    padding: 100px 0;
+    border-bottom: 1px solid #CACACA;
+    background: #FFF;
+}
+
+.feature-services .small-heading {
+    text-align: center;
+    display: block;
+}
+
+.feature-services h2 {
+    text-align: center;
+}
+
+.in-f-service1 {
+    width: 28%;
+    padding-top: 60px;
+}
+
+.f-service-contnt {
+    width: 100%;
+}
+
+.in-f-service1 .f-service-contnt:last-child,
+.in-f-service3 .f-service-contnt:last-child {
+    padding-top: 165px;
+    padding-left: 50px;
+}
+
+.in-f-service2 .f-service-contnt:last-child {
+    padding-top: 60px;
+}
+
+.f-service-contnt p {
+    font-size: 14px;
+    line-height: normal;
+    opacity: 0.6;
+    padding: 27px 0 29px;
+    padding-left: 40px;
+}
+
+.f-service-contnt h4 {
+    position: relative;
+    padding-left: 40px;
+}
+
+.f-service-contnt h4::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    background: #0085FF;
+    left: 0;
+    top: 10px;
+}
+
+.f-service-contnt .read-btn {
+    margin-left: 40px;
+}
+
+.inner-feature-services {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-service-contnt .read-btn a {
+    font-size: 14px;
+}
+
+.in-f-service2 {
+    width: 37%;
+}
+
+.in-f-service3 {
+    width: 29%;
+    padding-top: 60px;
+}
+
+.fs-image1 img {
+    width: 100%;
+    object-fit: cover;
+    height: 462px;
+}
+
+.fs-image1 {
+    width: 75%;
+}
+
+.fs-image2 {
+    width: 52%;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.fs-image2 img {
+    height: 327px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.feature-services-image {
+    position: relative;
+    height: 580px;
+}
+
+
+
+section.offers-solution {
+    background: #F4F7F9;
+    padding-top: 250px;
+    padding-bottom: 80px;
+}
+
+
+section.Industries-services {
+    background: linear-gradient(180deg, #0E1F35 0%, #1C3352 100%);
+    padding: 100px 0;
+    color: #fff;
+}
+
+.Industries-services span.small-heading {
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.Industries-services h2 {
+    text-align: center;
+}
+
+.Industries-services .read-btn a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.Industries-services .ancr-image {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.ancr-image img {
+	width:auto;
+}
+
+section.upcoming-business {
+    padding: 80px 0 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+
+.upcoming-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 85px;
+}
+
+.upcoming-top h4 {
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.upcoming-top span {
+    opacity: 0.2;
+    background: #0F1F35;
+    height: 1px;
+    width: 12%;
+}
+
+.upcoming-top p {
+    opacity: 1;
+    width: 44%;
+}
+
+.business-item {
+    display: flex;
+    padding-top: 80px;
+    justify-content: end;
+}
+
+.business-image {
+    width: 43%;
+}
+
+.business-contnt {
+    width: 52%;
+    padding-left: 40px;
+}
+
+.business-contnt>p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.business-image img {
+    height: 722px;
+}
+
+.business-list {
+    padding-top: 50px;
+}
+
+.list-text {
+    width: 47%;
+}
+
+.list-text h5 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.in-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.business-list>.list-text:last-child {
+    width: 100%;
+}
+
+.upcoming-business .owl-nav {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.busines-slider-side-title {
+    position: absolute;
+    left: 1%;
+    bottom: 5%;
+}
+
+.inner-travel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-cntnt {
+    display: flex;
+    width: 51%;
+    justify-content: space-between;
+}
+
+.travel-image-cntnt {
+    width: 41%;
+}
+
+.travel-cntnt h2 {
+    margin-left: 48px;
+    width: 73%;
+}
+
+.travel-cntnt span.small-heading {
+    padding-top: 20px;
+}
+
+section.Travel-Vehicle {
+    padding: 100px 0;
+}
+
+.travel-image-cntnt p {
+    padding: 48px 0 24px;
+}
+
+.travel-image {
+    width: 83%;
+}
+
+.travel-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 248px;
+}
+
+section.review {
+    background: #F4F7F9;
+    padding: 80px 0 415px;
+}
+
+.review span.small-heading {
+    padding-bottom: 20px;
+    display: block;
+}
+
+.review-item {
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+}
+
+.review-image {
+    width: 48%;
+}
+
+.review-contnt {
+    width: 44%;
+    padding-top: 45px;
+}
+
+.profile-text-image {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-pic {
+    width: 18%;
+}
+
+.profile-pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 101px;
+}
+
+.profile-title {
+    width: 50%;
+}
+
+.review-contnt>p {
+    color: #0F1F35;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32px;
+    opacity: 1;
+    padding: 50px 0 40px;
+}
+
+.review-image img {
+    height: 580px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.review .container {
+    padding-inline: 110px;
+}
+
+.review-star {
+    width: 25%;
+}
+
+.review .owl-nav {
+    position: absolute;
+    right: 33%;
+    bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************  chicago home page   ********************* */
+
+.about2-image-chicago {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 534px;
+    height: 449px;
+}
+
+.about2-image-chicago img {
+    width: 534px;
+    height: 449px;
+}
+
+section.chicago-about2 {
+    padding: 100px 0;
+    background: #FFF;
+    position: relative;
+}
+
+section.service2-chicago {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.service2-chicago .in-serv {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 27px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    position: relative;
+}
+
+.service2-chicago span.small-heading {
+    text-align: center;
+    display: block;
+}
+
+.service2-chicago h2 {
+    margin: 0px 0 30px;
+    text-align: center;
+}
+.bloge-content-area img {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+/*     margin-bottom: 30px; */
+}
+section.blogs {
+    padding: 100px 0;
+    background: #FAFAFA;
+}
+.blog-content-area p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.blog-main-cntnt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.blog-main-cntnt h2 {
+    font-size: 56px;
+    width: 40%;
+}
+
+.blog-main-cntnt p {
+    width: 42%;
+}
+
+.inner-blog-sec {
+    margin-inline: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    align-items: stretch;
+}
+
+.blog-card {
+    width: 50%;
+    padding-inline: 10px;
+}
+
+.blog-bottom {
+    padding-inline: 30px;
+}
+
+.blog-image {
+    width: 100%;
+}
+
+/* .blog-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 434px;
+    border: 14px solid #F2F2F2;
+} */
+
+.blog-bottom span.date {
+    padding-top: 24px;
+    display: block;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #545454;
+}
+
+.blog-bottom h4.blog-title {
+    padding: 10px 0 16px;
+}
+
+.blog-bottom p.blog-para {
+    font-size: 16px;
+    opacity: 1;
+    padding-bottom: 24px;
+    font-weight: 400;
+}
+
+.blog-btn {
+    border: 1px solid #3C81C5;
+    padding: 12px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #3C81C5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+	margin-top:20px;
+}
+
+.blog-btn img {
+    transition: all 0.3s ease-in-out;
+}
+.blog-btn:hover{
+    background: #3C81C5;
+    color: #fff;
+}
+.blog-btn:hover img{
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(208%) contrast(102%);
+}
+
+
+
+
+/* *********************   blog page   ********************* */
+
+
+
+section.blogs-page {
+    padding: 100px 0;
+}
+
+.blog-main-cntnt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.blog-main-cntnt h2 {
+    font-size: 56px;
+    width: 40%;
+}
+
+.blog-main-cntnt p {
+    width: 42%;
+}
+
+.inner-blog-sec {
+    margin-inline: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    align-items: stretch;
+}
+
+.blog-card {
+    width: 50%;
+    padding-inline: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-bottom {
+    padding-inline: 30px;
+}
+
+.blog-image {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    border: 14px solid #F2F2F2;
+    height: 462px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 434px;
+    /* border: 14px solid #F2F2F2; */
+    transition: all 0.3s ease-in-out;
+}
+.blog-card:hover img{
+    transform: scale(1.04);
+}
+.blog-bottom span.date {
+    padding-top: 24px;
+    display: block;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #545454;
+}
+
+.blog-bottom h4.blog-title {
+    padding: 10px 0 16px;
+}
+
+.blog-bottom p.blog-para {
+    font-size: 16px;
+    opacity: 1;
+    padding-bottom: 24px;
+    font-weight: 400;
+}
+
+.blog-btn {
+    border: 1px solid #3C81C5;
+    padding: 12px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #3C81C5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-btn img {
+    transition: all 0.3s ease-in-out;
+}
+.blog-btn:hover{
+    background: #3C81C5;
+    color: #fff;
+}
+.blog-btn:hover img{
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(186deg) brightness(208%) contrast(102%);
+}
+
+section.blog-detail .container {
+    padding: 67px 270px 74px 190px;
+}
+
+.blog-detail h2 {
+    font-size: 40px;
+    line-height: 150%;
+}
+
+.blog-detail span.bloge-date {
+
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: end;
+}
+
+.blog-detail-profile-image-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 0 40px;
+}
+
+.bloge-image {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.blog-profile-title h4 {
+    padding-bottom: 20px !important;
+    font-size: 16px;
+}
+
+.blog-profile-title p {
+    padding-bottom: 0px !important;
+    font-size: 12px;
+}
+
+.blog-profile-pic {
+    height: 60px;
+    width: 60px;
+}
+
+.bloge-image img {
+    width: 100%;
+    border-radius: 16px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.blog-detail h4 {
+    padding: 0px 0 40px;
+    color: #1B2A5E;
+}
+.blog-detail .blog-profile-title h4 {
+	    padding: 0px;
+}
+.blog-detail p {
+    padding-bottom: 40px;
+    opacity: 1;
+    /* color: #71778D; */
+}
+
+.continue-reading h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 150%;
+    padding-bottom: 60px;
+    color: #000;
+}
+
+.inner-detail-blogs {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 100px;
+}
+
+.inner-detail-blogs .blog-bottom h4.blog-title {
+    padding: 6px 0 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.837px;
+}
+
+.inner-detail-blogs .blog-bottom {
+    padding-inline: 13px;
+}
+
+.inner-detail-blogs .blog-bottom span.date {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 15px;
+}
+
+.inner-detail-blogs .blog-bottom p.blog-para {
+    opacity: 1;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.301px;
+}
+
+.inner-detail-blogs .blog-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 284px;
+    /* border: 9px solid #F2F2F2; */
+}
+.inner-detail-blogs .blog-image {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    border: 9px solid #F2F2F2;
+    height: 294px;
+    overflow: hidden;
+}
+.inner-detail-blogs .blog-btn {
+    border: 1px solid #3C81C5;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #3C81C5;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 6px;
+}
+
+.inner-detail-blogs .blog-btn img {
+    width: 15px;
+    height: 15px;
+}
+.blog-btn:hover {
+    background: #3C81C5;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.detail-banner h1 {
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    bottom: 0;
+	font-size: clamp(1.5rem, 0.3214rem + 5.8929vw, 5.625rem);
+	    line-height: 1.2;
+
+}
+.detail-banner h1 {
+    /* color: transparent; */
+    position: absolute;
+    text-align: center;
+    opacity: 1;
+}
+section.detail-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+section.detail-banner:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 27.38%); */
+    background-blend-mode: multiply;
+    /* background: linear-gradient(90deg, rgba(28, 51, 82, 0.4) 0%, rgba(0, 0, 0, 0) 39.58%); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+/* *********************   who we-are   ********************* */
+
+section.mainn-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+section.mainn-banner .container{
+	width:100%;
+}
+.mainn-banner h1 {
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    bottom: 0;
+}
+
+section.book-lemo {
+    padding: 110px 80px;
+    background: #F4F7F9;
+    position: relative;
+}
+
+.book-lemo-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-lemo-heading {
+    width: 50%;
+}
+
+.book-lemo-content h2 {
+    text-transform: uppercase;
+    color: #0F1F35;
+}
+
+.book-lemo-para {
+    width: 42%;
+    margin-top: 6px;
+}
+
+.ancr-image {
+    width: 32px;
+    height: 32px;
+    background: #1C3352;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-btn a {
+    display: flex;
+    align-items: center;
+    color: #1C3352;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 8px;
+}
+
+.book-lemo-para p {
+    color: #0F1F35;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    padding-bottom: 30px;
+    opacity: 1 !important;
+}
+
+
+
+.airport-image {
+    width: 708px;
+    position: absolute;
+    right: 0;
+    top: 42%;
+}
+
+.airport-image img {
+    height: 382px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.pickup-airport {
+    display: flex;
+    padding-top: 80px;
+}
+
+.pickup-airport-contnt p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.6;
+    padding-top: 24px;
+    padding-right: 45px;
+}
+
+.pickup-airport-contnt h4 {
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    position: relative;
+    font-size: 28px;
+}
+
+.pickup-airport-contnt h4::before {
+    content: '';
+    position: absolute;
+    width: 118px;
+    height: 1px;
+    opacity: 0.2;
+    background: #000;
+    bottom: 0;
+    left: 0;
+}
+
+.pickup-airport-contnt {
+    width: 49%;
+}
+
+.read-btn a:hover .ancr-image {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+section.corporate-treval-w {
+    padding: 100px 0 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(244, 247, 249, 1) 50%);
+}
+
+.corporate-travel-contnt-w {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corporate-left-w {
+    width: 50%;
+}
+
+.corporate-left-w h4 {
+    margin: 52px 0 32px;
+}
+
+.corporate-right-image-w {
+    width: 49%;
+    /* transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; */
+}
+
+.corporate-right p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+.corporate-right-image-w img {
+    height: 406px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* .mnbv{
+    width: 100%;
+    overflow: hidden;
+} */
+section.offers-solution-w {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(244, 247, 249, 1) 50%);
+    padding: 80px 0 80px;
+}
+
+.offer-solution-left-contnt h4 {
+    padding: 40px 0 24px;
+}
+
+.offer-solution-heading {
+    width: 49%;
+}
+
+.offer-solution-left-contnt p {
+    padding-bottom: 25px;
+}
+
+.inner-offer-solution {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.offer-solution-heading h4 {
+    margin: 52px 0 32px;
+}
+
+.offer-solution-right-image {
+    width: 49%;
+}
+
+.offer-solution-right-image img {
+    height: 392px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.schedule-top {
+    display: flex;
+}
+
+.schedule-top h2 {
+    width: 55%;
+}
+
+.schedule-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.schedule-image {
+    width: 50%;
+}
+
+.schedule-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 462px;
+}
+
+.schedule-cntnt {
+    width: 45%;
+}
+
+.schedule-cntnt h3 {
+    font-family: 'Poppins';
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.schedule-cntnt .read-btn {
+    margin-top: 50px;
+}
+
+section.schedule {
+    background: #fff;
+    padding: 0px 0 100px;
+}
+
+/* *********************   AJ Difference page   ********************* */
+
+section.philosofy-diff {
+    padding: 100px 0;
+}
+
+.philosofy-diff-contnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.philosofy-diff-left {
+    width: 40%;
+}
+
+.philosofy-diff-text h2 {
+    padding-bottom: 38px;
+}
+
+.philosofy-diff-right {
+    width: 50%;
+}
+
+.innnr-philosfy-diff h4 {
+    padding-top: 24px;
+    padding-right: 93px;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.philosofy-diff-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 359px;
+}
+
+.philosofy-diff-image {
+    width: 100%;
+}
+
+section.Professional-Chauffeurs {
+    padding: 80px 0 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    background: #F4F7F9;
+}
+
+.Professional-Chauffeurs-left {
+    width: 40%;
+}
+
+.Professional-Chauffeurs-cntnt h3 {
+    padding: 12px 0 32px;
+}
+
+.Professional-Chauffeurs-left h2 {
+    padding-bottom: 38px;
+    padding-top: 10px;
+}
+
+.inner-Professional-Chauffeurs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Professional-Chauffeurs-right {
+    position: relative;
+    width: 52%;
+    text-align: -webkit-right;
+}
+
+.Professional-image1 {
+    width: 78%;
+}
+
+.Professional-image1 img {
+    width: 100%;
+    object-fit: cover;
+    height: 520px;
+}
+
+.Professional-image2 {
+    width: 62%;
+    position: absolute;
+    bottom: -15px;
+    left: -8%;
+}
+
+.Professional-image2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+}
+
+section.commitment {
+    padding: 80px 0;
+}
+
+.commitment span.small-heading {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.commitment h2 {
+    text-align: center;
+}
+
+.inner-commitment-sec {
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-inline: -12px;
+    row-gap: 24px;
+}
+
+.commitment-card {
+    transition: all 0.3s ease-in-out;
+    padding: 24px 16px;
+    border: 1px solid #ECECEC;
+    background: #fff;
+    height: 100%;
+    cursor: pointer;
+}
+
+.commitment-card span {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    display: inline-block;
+    background: #0085FF;
+}
+
+.commitment-card h4 {
+    padding-bottom: 32px;
+    padding-top: 15px;
+}
+
+.commitment-card p {
+    font-size: 14px;
+}
+
+.commtment-sec {
+    width: 33.33%;
+    padding-inline: 12px;
+}
+
+.commitment-card:hover {
+    box-shadow: 0px 30px 54px 0px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+}
+
+.elevate-jrny-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+
+.elevate-jrny-image {
+    width: 50%;
+}
+
+section.elevate-jrny {
+    background: #F4F7F9;
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+/* *********************   AJ fleet page   ********************* */
+
+
+section.fleeet {
+    background: #FFF;
+    padding: 100px 0;
+}
+
+.fleeet-contnt {
+    width: 50%;
+    padding-inline: 35px;
+}
+.fleet-image {
+    width: 50%;
+    padding-inline: 35px;
+}
+.fleet-image img {
+	width:100%;
+	object-fit:cover;
+}
+.fleeet-contnt p {
+    padding: 32px 0 44px;
+}
+
+section.book-limo2 {
+    background: #F4F7F9;
+    padding: 80px 0;
+}
+
+.select-ride {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.select-ride-heading {
+    width: 47%;
+}
+
+.select-ride>p {
+    width: 47%;
+}
+
+.inner-book-limo2 span.small-heading,
+.inner-book-limo3 span.small-heading {
+    max-width: 96px;
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.select-ride-heading h2 {
+    padding-bottom: 48px;
+}
+
+.inner-book-limo2 {
+    display: flex;
+}
+
+    display: flex;
+}
+
+section.ride-cars {
+    padding: 0px 0 100px;
+
+}
+
+.car-item>h2 {
+    padding-bottom: 55px;
+    padding-left: 5%;
+    background: #F4F7F9;
+}
+
+.car-item-image {
+    width: 100%;
+}
+
+.car-item-image img {
+    height: 600px;
+}
+
+.car-item-bottom {
+    padding: 66px 0;
+    position: relative;
+}
+
+.ride-cars .owl-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #F4F7F9;
+    width: 18%;
+}
+
+.now-card-avail {
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.book-now-cardd {
+    background: #FFF;
+    box-shadow: 0px 4px 74px 0px rgba(17, 18, 18, 0.08);
+    padding: 40px 28px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 410px;
+    height: 232px;
+    justify-content: space-between;
+    top: -50%;
+    right: 6%;
+}
+
+.now-card-avail img {
+    width: 40px;
+    height: 40px;
+}
+
+.book-now-card-text p {
+    padding: 18px 0 36px;
+    font-size: 16px;
+}
+
+
+
+
+
+/* *********************   Ground transportation page   ********************* */
+
+
+section.ground-tranportation {
+    background: #F4F7F9;
+    padding: 80px 0;
+}
+
+.inner-ground-transportation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ground-transportation-contnt {
+    width: 43%;
+}
+
+.ground-transportation-contnt h4 {
+    padding: 40px 0 24px;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ground-transportation-contnt h4::before {
+    content: '';
+    position: absolute;
+    width: 118px;
+    height: 2px;
+    background-color: hsla(0, 0%, 0%, 0.20);
+    bottom: 0;
+    left: 0;
+}
+
+.ground-transportation-image {
+    width: 50%;
+}
+
+.ground-transportation-contnt p {
+    padding-top: 24px;
+}
+
+.ground-transportation-image img {
+    height: 440px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.roadshow-contnt p {
+    padding-top: 30px;
+}
+
+.roadshow-contnt p a {
+    color: #0F1F35;
+    text-decoration: underline;
+}
+
+.roadshow-contnt {
+    width: 47%;
+}
+
+.roadshow-image {
+    width: 50%;
+}
+
+.inner-roadshow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.LIMOUSINE-service.chicago-service {
+	padding:0;
+}
+.chicago-service .inner-roadshow-upper {
+	padding:100px 0;
+}
+.chicago-service .inner-roadshow-upper:nth-child(even) {
+	background: rgba(244, 247, 249, 1);
+	
+}
+.chicago-service .inner-roadshow-upper:nth-child(even) .inner-roadshow{
+	flex-direction:row-reverse;
+}
+section.why-roadshow {
+    padding: 100px 0;
+}
+
+.roadshow-contnt h3 {
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+.roadshow-image img {
+    height: 490px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sp-oc-big-image img {
+    height: 391px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.special-occasion-image {
+    width: 50%;
+}
+
+.special-occasion-image img {
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sp-occasion-heading {
+    width: 45%;
+}
+
+.sp-occasion-heading p {
+    margin-top: 37px;
+}
+
+.inner-special-occasion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+section.special-occasion-2 {
+    background: #F4F7F9;
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+.inner-special-occasion2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightt-special-occasion2 {
+    width: 52%;
+    text-align: -webkit-right;
+    position: relative;
+    height: 615px;
+}
+
+.left-special-occasion2 {
+    width: 37%;
+}
+
+/* .ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  } */
+.progress {
+    width: 379px;
+    height: 1px;
+    background: #BCB8B8;
+}
+
+.progress-bar {
+    background: #000;
+    height: 1px;
+}
+
+.js-ag-hide {
+    display: none;
+}
+
+.ag-faq_list {
+    padding: 50px 0;
+}
+
+.ag-faq_item {
+    margin: 0 0 15px;
+}
+
+.js-ag-faq_title {
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+
+.js-ag-faq_text {
+    padding: 0px 30px 0 0;
+    height: 280px;
+}
+
+.js-ag-faq_text p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+/* *********************   roadshows page   ********************* */
+
+.road-show-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.road-show-content h2 {
+    /* width: 50%; */
+    text-transform: uppercase;
+    color: #0F1F35;
+}
+
+.road-show .pickup-airport {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.road-show-heading {
+    width: 50%;
+}
+
+.road-show .airport-image {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 41%;
+}
+
+.road-show .airport-image img {
+    height: 340px;
+    object-fit: cover;
+    width: 100%;
+}
+
+section.road-show {
+    padding: 110px 80px;
+    background: #F4F7F9;
+    position: relative;
+}
+
+
+/* .phil-left {
+    display: flex;
+} */
+
+.roadshowq-image {
+    width: 50%;
+}
+
+.roadshowq-image img {
+    height: 730px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+section.corporate-treval {
+    padding: 0px 0 100px;
+}
+
+.corporate-top {
+    width: 44%;
+}
+
+.corporate-left {
+    display: flex;
+}
+
+.corporate-left-image {
+    margin-left: 23%;
+    width: 40%;
+    margin-bottom: -50%;
+    margin-top: 245px;
+}
+
+.corporate-travel-contnt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corporate-right {
+    width: 49%;
+}
+
+.phil-left p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+.phil-left h4 {
+    padding: 32px 0 32px;
+    font-weight: 400;
+}
+
+.corporate-right img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aj-why-right-image img {
+    height: 349px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.aj-why-right-image {
+    width: 100%;
+}
+
+.aj-why-left {
+    width: 49%;
+}
+
+.inner-aj-why {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aj-why-right {
+    width: 49%;
+}
+
+.aj-why-right p {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.aj-why-left p {
+    padding-top: 43px;
+    font-size: 14px;
+}
+
+.aj-why-left p a,
+.aj-why-right p a {
+    font-size: 14px;
+    color: #0F1F35;
+    text-decoration: underline;
+}
+
+section.why-aj {
+    padding: 80px 0;
+    background: #F4F7F9;
+    margin-bottom: 100px;
+}
+
+
+
+
+/* *********************   Private Aviation page   ********************* */
+
+
+
+section.private-drivers {
+    padding: 80px 0;
+    background: #F4F7F9;
+}
+
+.inner-private-drivers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.private-drivers-heading {
+    width: 45%;
+}
+
+.private-drivers-image {
+    width: 40%;
+}
+
+.private-drivers-heading .read-btn {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.private-drivers-image h4 {
+    padding: 0 20px 48px 0;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.private-image img {
+    height: 298px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.private-image {
+    width: 100%;
+}
+
+section.Professional-Chauffeurs2 {
+    padding: 80px 0 170px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.Professional-Chauffeurs2 .Professional-Chauffeurs-cntnt {
+    padding-left: 0px;
+    width: 85%;
+}
+
+.Professional-Chauffeurs-cntnt p {
+    margin-bottom: 20px;
+}
+
+.Professional-Chauffeurs-cntnt p a,
+.pa-fleet-contnt p a {
+    color: #0F1F35;
+    text-decoration: underline;
+}
+
+.Professional-Chauffeurs-cntnt p span {
+    text-decoration: underline;
+}
+
+.inner-Professional-Chauffeurs2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.pd-expensive {
+    padding: 80px 0;
+    background: #F4F7F9;
+    margin-bottom: 100px;
+}
+section.pd-expensive.good-personal-main {
+	padding:0;
+	margin-bottom:0;
+	background:transparent;
+}
+.pa-fleet {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-private-title-area{
+	padding-bottom:100px;
+}
+.pa-fleet-image {
+    width: 49%;
+}
+
+.pa-fleet-image img {
+    height: 545px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.pa-fleet-contnt {
+    width: 49%;
+}
+
+.pa-fleet-contnt p {
+    padding: 36px 0px 0 0;
+}
+
+.pa-why-aj-tp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Professional-Chauffeurs-left2 {
+    width: 48%;
+}
+
+.pa-why-aj-heading {
+    width: 45%;
+}
+
+.Professional-Chauffeurs-left2 h2 {
+    padding-bottom: 38px;
+    padding-top: 10px;
+}
+
+.pa-why-aj-image {
+    width: 41%;
+}
+
+.pa-why-aj-heading p {
+    padding: 46px 60px 0 0;
+}
+
+.pa-why-in-image img {
+    height: 296px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.pa-why-in-image {
+    width: 100%;
+}
+
+.pa-why-aj-image p {
+    padding-top: 46px;
+}
+
+.pa-why-aj-btm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pa-why-aj-cntnt h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.pa-why-aj-cntnt {
+    width: 43%;
+    padding-right: 35px;
+}
+
+
+
+
+
+
+/* *********************   Global Corporate Travel page   ********************* */
+section.why-roadshow {
+    padding: 100px 0;
+}
+
+.ts-bussiness-image {
+    width: 50%;
+}
+
+.ts-bussiness-image img {
+    height: 590px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.special-occasion-3 {
+    padding: 80px 0;
+    background: #F4F7F9;
+}
+
+.inner-special-occasion3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-special-occasion3 .in-sp-left {
+    width: 43%;
+    padding-left: 60px;
+}
+
+.sp-left-image img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.inner-special-occasion3 .in-sp-right {
+    width: 43%;
+    padding-right: 60px;
+}
+
+.sp-right-image img {
+    height: 248px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.spp-right-image img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.inner-special-occasion3 .in-sp-left .sp-left h4,
+.inner-special-occasion3 .in-sp-right .sp-right h4 {
+    margin: 40px 0 24px;
+}
+
+.inner-special-occasion3 .in-sp-right .sp-right:nth-child(2) {
+    margin-top: 110px;
+}
+
+section.global-fleet {
+    padding: 100px 0;
+}
+
+.en-responsibe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.en-responsibe-image {
+    width: 49%;
+}
+
+.en-responsibe-image img {
+    height: 430px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* *********************   Airport Transportation page   ********************* */
+
+
+
+section.LIMOUSINE-service {
+    padding:50px 0 100px 0;
+}
+
+.LIMOUSINE-service-image {
+    width: 50%;
+}
+
+.LIMOUSINE-service-image img {
+    height: 568px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.private-drivers-heading>p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    opacity: 1 !important;
+    margin-top: 50px;
+}
+
+
+
+.pa-why-aj-tp-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top:55px;
+}
+.airport-why-aj-2-top-heading {
+    display: flex;
+    align-items: center;
+}
+
+.airport-why-aj-2-top-heading h2,.airport-why-aj-2-top-heading p {
+    flex: 0 0 50%;
+}
+.airport-why-aj-2-top-heading p a{
+	    color: #0F1F35;
+	text-decoration:underline;
+}
+.pa-why-aj-heading-2 h3 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.pa-why-aj-heading-2 {
+    width: 50%;
+}
+.pa-why-aj-heading-2 p{
+	margin-top:25px;
+}
+.pa-why-aj-image-2 {
+    width: 43%;
+}
+
+.pa-why-in-image-2 img {
+    height: 437px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.shuttle-service .pa-why-aj-2 {
+    padding-top: 100px;
+}
+
+section.airport-why-aj-2 {
+    background: #F4F7F9;
+    padding: 80px 0 100px;
+}
+
+
+.airport-why-in-image-2 img {
+    height: 460px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.airport-why-aj-image-2 {
+    width: 42%;
+}
+
+section.shuttle-service {
+    padding: 80px 0 100px;
+}
+
+.shuttle-service .pa-why-aj-heading-2 p {
+    margin-top: 40px;
+}
+section.bleisure-travel {
+    background: #F4F7F9;
+    padding: 80px 0 50px;
+}
+
+.bleisure-travel-flex {
+    display: flex;
+    align-items: flex-start;
+	flex-wrap:wrap;
+}
+
+.bleisure-travel-heading {
+    flex: 0 0 60%;
+}
+
+.bleisure-travel-content {
+    flex: 0 0 40%;
+}
+
+.bleisure-travel-heading {}
+
+.bleisure-travel-heading h2 {
+    font-size: 32px;
+    max-width: 530px;
+}
+
+.bleisure-travel-heading p {
+    max-width: 517px;
+    margin-top: 28px;
+}
+
+
+.bleisure-travel-content p:not(:first-child) {
+    margin-top: 28px;
+}
+
+
+
+/* *********************   hotel page   ********************* */
+
+
+section.hotel-limo-service {
+    background: #F4F7F9;
+    padding: 80px 0;
+}
+
+.pickup-hotel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.hotel-image {
+    width: 42%;
+}
+
+.hotel-image img {
+    height: 240px;
+    object-fit: cover;
+    width: 100%;
+}
+
+section.hotel-why-aj-2 {
+    padding-bottom: 100px;
+}
+
+.hotel-why-aj-image-2 {
+    width: 49%;
+}
+
+.hotel-why-aj-image-2 img {
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.hotel-why-aj-heading-2 {
+    width: 45%;
+}
+
+.hotel-why-aj-heading-2 p {
+    margin-top: 40px;
+}
+
+section.hotel-nearme {
+    padding: 80px 0 60px;
+    background: #F4F7F9;
+}
+
+.read-btn {
+    display: inline-block;
+}
+
+.hotel-nearme .Professional-Chauffeurs-cntnt {
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+section.thanx {
+    background: #F4F7F9;
+    padding: 80px 0 30px;
+}
+
+.thanx h2 {
+    text-align: center;
+}
+
+.thanx p {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+section.vedioss {
+    margin-bottom: 100px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(244, 247, 249, 1) 50%);
+}
+
+.video-player {
+    width: 100%;
+    height: 632px;
+    position: relative;
+}
+
+.video-player video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.life_time_video_hover button {
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    width: 198px;
+    height: 198px;
+}
+
+section.vedio {
+    padding-bottom: 100px;
+}
+
+.second {
+    display: none;
+}
+
+
+
+
+/* *********************   events page   ********************* */
+
+
+.pickup-airport-contnt .read-btn {
+    margin-top: 30px;
+}
+
+section.events-big {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.events-big-para {
+    column-count: 2;
+}
+
+.events-big-para p {
+    padding-top: 40px;
+}
+
+.events-big-image img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+section.concert-service {
+    padding: 50px 0 100px;
+}
+
+.inner-concert-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.concert-service-heading {
+    width: 50%;
+}
+
+.concert-service-image {
+    width: 49%;
+}
+
+.concert-service-image img {
+    height: 270px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.in-hotel-left {
+    /* padding-top: 70px; */
+    width: 43%;
+    padding-left: 105px;
+}
+
+.in-hotel-right {
+    width: 46%;
+}
+
+.in-hotel-left-image img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.innn-hotel-right {
+    padding-left: 70px;
+}
+
+.in-hotel-right-image img {
+    height: 248px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.inn-hotel-right {
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top: 110px;
+}
+
+.inn-hotel-right-image img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.inner-special-occasion2 p {
+    margin-top: 30px;
+}
+
+/* *********************   contact 2 page   ********************* */
+section.contact2-send-message {
+    padding: 100px 0 100px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(244, 247, 249, 1) 50%);
+}
+
+.contact2-inner-send-message {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact2-send-message-right {
+    border: 1px solid #E3E3E3;
+    background: #FFF;
+    padding: 40px 70px;
+    width: 85%;
+    /* height: 700px; */
+}
+
+.contact2-send-message-right h2 {
+    color: #0F1F35;
+    font-size: 44px;
+    padding-bottom: 44px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 500;
+}
+.contact2-send-message-right p{
+    opacity: 1;
+}
+.contact2-send-message-right .wpcf7-submit {
+    background: #3C81C5;
+    width: 70%;
+    padding: 17px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+.input-grp2 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+}
+
+.input-grp2 .input-container {
+    flex: 1 0 200px;
+}
+
+.input-container {
+    background: white;
+    /* padding: 16px; */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input-container textarea {
+    resize: none;
+    outline: none;
+}
+
+.input-container input,
+.input-container textarea,
+.input-container select {
+    font-size: 0.9rem;
+    color: #333;
+    outline: none;
+    width: 100%;
+    border: 1px solid #C6C6C6;
+    background: #FFF;
+    padding: 13px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins';
+}
+
+.input-container p label,
+.input-container p select+label {
+    position: absolute;
+    left: 16px;
+    top: -14px;
+    z-index: 2;
+    font-size: 14px;
+    transition: 0.5s;
+    color: rgba(28, 51, 82, 0.4);
+    background: #fff;
+    padding-inline: 6px;
+}
+
+.input-container .wpcf7-form-control-wrap input:placeholder-shown+label,
+.input-container .wpcf7-form-control-wrap textarea:placeholder-shown+label {
+    top: -40px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #fff;
+    padding-inline: 6px;
+}
+
+.input-container .wpcf7-form-control-wrap input:not(:placeholder-shown)+label,
+.input-container .wpcf7-form-control-wrap textarea:not(:placeholder-shown)+label {
+    top: -40px;
+    font-size: 0.8rem;
+    color: #1C3352;
+    padding-inline: 6px;
+}
+
+.input-container .wpcf7-form-control-wrap input:focus+label,
+.input-container .wpcf7-form-control-wrap textarea:focus+label {
+    top: -40px;
+    font-size: 0.8rem;
+    color: #1C3352;
+    padding-inline: 6px;
+}
+
+/* Adjust label position when a value is selected */
+.input-container select:not(:placeholder-shown)+label {
+    top: -10px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #fff;
+    padding-inline: 6px;
+}
+
+.input-container textarea::placeholder {
+    color: #C6C6C6;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-container select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-image: url(http://aj-prestige.local/wp-content/uploads/2024/02/form-down-arrow.svg);
+}
+
+section.mappp {
+    padding-bottom: 100px;
+}
+
+/* .in-mapp {
+    margin-top: -20%;
+} */
+
+.in-mapp iframe {
+    height: 587px;
+    width: 100%;
+}
+
+.contact2-send-message .container>h2 {
+    padding-bottom: 60px;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    font-weight: 500;
+}
+
+.footer-social-bottom-listtt ul {
+    display: flex;
+    gap: 65px;
+    /* padding-inline: 160px; */
+    justify-content: center;
+}
+
+.footer-social-bottom-listtt a {
+    color: #EDF5F4;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-bottom-listtt a:hover {
+    opacity: 1;
+}
+
+.footer-middle-in {
+    padding: 50px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-iconsss ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-iconsss li {
+    display: inline-flex;
+}
+
+.social-iconsss a {
+    display: inline-flex;
+}
+
+.footer-bottomm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 25px;
+    border-top: 1px solid #ffffff17;
+}
+
+.footer-bottomm p {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.footer-bottomm a {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.7;
+    padding-inline: 10px;
+}
+
+.f-bottom-links {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* *********************   location page   ********************* */
+
+section.location-map {
+    padding: 100px 0 0px;
+	display: none;
+}
+
+.location-name h2 {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.location-name p {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.location-image {
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1080px;
+}
+
+section.map-list {
+    padding: 100px 0;
+}
+
+.map-in-list {
+    padding-top: 40px;
+}
+
+.map-list h2 {
+    width: 70%;
+}
+.map-list-last-pargraph{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 60px;
+    display: block;
+}
+.map-in-list ul {
+    /* columns: 3; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-in-list li {
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    flex: 0 0 33%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.map-in-list li span {
+	margin-right:12px;
+	display:inline-block;
+	    height: 28px;
+
+}
+.map-in-list li span img {
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
+.map-in-list li a {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    opacity: 0.5;
+}
+
+.map-in-list li::before {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: #D0D0D0;
+    left: 0;
+    top: 0;
+}
+
+.map-in-list li:nth-child(1)::before,
+.map-in-list li:nth-child(4)::before,
+.map-in-list li:nth-child(7)::before,
+.map-in-list li:nth-child(10)::before,
+.map-in-list li:nth-child(13)::before,
+.map-in-list li:nth-child(16)::before,
+.map-in-list li:nth-child(19)::before,
+.map-in-list li:nth-child(22)::before,
+.map-in-list li:nth-child(25)::before,
+.map-in-list li:nth-child(28)::before,
+.map-in-list li:nth-child(31)::before,
+.map-in-list li:nth-child(34)::before {
+    width: 0;
+}
+
+/* *********************   home2 page   ********************* */
+.slider-name1 {
+    padding-top: 318px;
+    text-align: left;
+    padding-left: 150px;
+    color: #fff;
+}
+
+.slider-name1 h1 {
+    font-size: 76px;
+}
+
+.slider-frame {
+    position: absolute;
+    right: 95px;
+    top: 145px;
+    width: 520px;
+    height: 712px;
+}
+
+.slider-name1 span {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+}
+
+section.about2 {
+    padding: 100px 0;
+    background: #FFF;
+    position: relative;
+}
+
+.about2-in-sec {
+    width: 65%;
+    padding-right: 70px;
+}
+
+.about2-in-sec p {
+    margin: 34px 0 34px;
+}
+
+.primary-button {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-flex;
+    padding: 15px 40.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 36px;
+    background: #1C3352;
+}
+
+.about2-image {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 560px;
+    height: 360px;
+}
+
+.about2-image img {
+    width: 560px;
+    height: 360px;
+}
+
+section.service2 {
+    border-bottom: 1px solid #CACACA;
+    background: #F4F7F9;
+    padding: 80px 0;
+}
+
+.service2 h2 {
+    margin: 0px 0 30px;
+    text-align: center;
+}
+
+.service2 span.small-heading {
+    text-align: center;
+    display: block;
+}
+
+.in-serv {
+    background: #F4F7F9;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 27px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    position: relative;
+}
+
+.serv-img {
+    width: 22%;
+}
+
+.in-serv h4 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.in-serv p {
+    margin: 20px 0 24px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    line-height: 24px;
+}
+.aj-home-chicago-services .readd-btn{
+    display: block;
+}
+.readd-btn {
+    display: none;
+    position: absolute;
+    bottom: 18px;
+}
+.aj-home-chicago-services .serv-card{
+    width: 25%;
+        height: 340px;
+}
+.serv-card {
+    padding-inline: 12px;
+    width: 33.33%;
+    height: 300px;
+}
+
+.readd-btn a {
+    display: flex;
+    align-items: center;
+    color: #1C3352;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.in-serv:hover .ancr-image {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    /* filter: brightness(80%) contrast(120%) saturate(150%); */
+}
+
+.in-serv:hover .ancr-image img {
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(43%) saturate(631%) hue-rotate(170deg) brightness(100%) contrast(101%);
+}
+
+.in-serv:hover {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #0E1F35;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.in-serv:hover p {
+    opacity: 1;
+    color: #fff;
+}
+
+.in-serv:hover .serv-img img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+}
+
+.in-serv:hover .readd-btn a {
+    color: #fff;
+}
+
+.servive2-inner {
+    display: flex;
+    margin-inline: -12px;
+    flex-wrap: wrap;
+}
+
+section.inderies {
+    background: rgb(34, 53, 84);
+    background: linear-gradient(90deg, rgba(34, 53, 84, 1) 50%, rgba(14, 31, 53, 1) 50%);
+}
+
+.inner-inderies {
+    display: flex;
+}
+section.inderies .container {
+    max-width: none;
+    padding: 0;
+}
+
+.right-inderies {
+    width: 41%;
+    padding: 70px 20px 50px 60px;
+    background-color: #0E1F35FA;
+}
+
+.right-inderies .small-heading {
+    color: #fff;
+}
+
+.right-inderies h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.right-inderies p {
+    color: #fff;
+    padding: 33px 0;
+}
+
+.left-inderies {
+    width: 59%;
+    background-color: #223554;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.inderies-horizontle {
+    padding: 60px 60px 0px 30px;
+    display: none;
+    height: 100%;
+}
+
+.inderies-horizontle-image img {
+    /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); */
+    width: 75px;
+    height: 52px;
+}
+
+.inderies-horizontle-image {
+    margin: 35px 0;
+}
+
+.inderies-verticle {
+    display: block;
+    height: 100%;
+    writing-mode: tb;
+    width: 100%;
+    padding-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.inderies-horizontle h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 400px;
+}
+
+.inderies-verticle h4 {
+    font-weight: 400;
+}
+
+.inderies-horizontle p {
+    color: #fff;
+    line-height: 28px;
+    font-weight: 300;
+    width: 425px;
+}
+
+.cl1 {
+    background-color: #294065;
+}
+
+.cl2 {
+    background-color: #314C79;
+}
+
+.cl3 {
+    background-color: #3B5C91;
+}
+
+.cl4 {
+    background-color: #1C3352;
+}
+
+.inderies-card {
+    flex: 0 0 9%;
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out;
+    cursor: pointer;
+    min-height: 495px;
+    height: 530px;
+}
+
+.inderies-card.card-active {
+    flex: 0 0 64%;
+    cursor: default;
+}
+
+.card-active .inderies-horizontle {
+    display: block;
+}
+
+.inderies-card.card-active .inderies-verticle {
+    display: none;
+}
+
+.crd-readd-btn {
+    padding-top: 27px;
+    display: inline-block;
+    width: 120px;
+
+}
+
+.right-inderies .primary-button {
+    color: #1C3352;
+    background: #fff;
+}
+
+.right-inderies .primary-button img {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(43%) saturate(631%) hue-rotate(170deg) brightness(100%) contrast(101%);
+}
+
+.crd-readd-btn a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 8px;
+    animation: fadeIn 2s ease-in-out;
+
+}
+
+.crd-readd-btn .ancr-image {
+    background: #fff;
+}
+
+.crd-readd-btn .ancr-image img {
+    filter: brightness(30%) contrast(120%) saturate(150%);
+}
+
+
+.inderies-card.card-active .crd-readd-btn a {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.crd-readd-btn:hover .ancr-image {
+    transform: rotate(45deg);
+}
+
+
+section.client-tstmnl {
+    padding: 100px 0 100px 112px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.client-tstmnl-heading {
+    width: 39%;
+    position: relative;
+}
+
+.client-tstmnl-slider {
+    width: 61%;
+}
+
+.client-tstmnl-heading .swiper-button-next,
+.client-tstmnl-heading .swiper-button-prev {
+    width: 44.98px;
+    height: 44.98px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: auto;
+    z-index: 1;
+    display: inline-block;
+    bottom: 10%;
+    /* border: 1px solid #1C3352; */
+    border-radius: 50px;
+}
+
+
+.client-tstmnl-heading .swiper-button-next,
+.client-tstmnl-heading .swiper-rtl .swiper-button-prev {
+    /* right: var(--swiper-navigation-sides-offset, 10px); */
+    left: 70px;
+}
+
+.client-tstmnl-heading .swiper-button-prev,
+.client-tstmnl-heading .swiper-rtl .swiper-button-next {
+    left: 0;
+    right: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: 'next';
+    display: none;
+}
+
+.inner-client-tstmnl {
+    border-top: 3px solid #F3F3F3;
+    border-bottom: 3px solid #F3F3F3;
+    background: #F4F7F9;
+    padding: 50px 20px;
+}
+
+.inner-client-pro-img img {
+    width: 67px;
+    height: 67px;
+    border-radius: 50px;
+}
+
+.inner-client-tstmnl p {
+    margin: 37px 0;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32px;
+    opacity: 1 !important;
+}
+
+.client-pro-title span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+    margin-top: 10px;
+    display: block;
+}
+
+.inner-client-pro-img {
+    display: flex;
+    gap: 18px;
+    width: 75%;
+}
+
+.client-pro-title h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1C3352;
+}
+
+section.page-contact {
+    background: #fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(20, 39, 65, 1) 50%);
+}
+
+.page-contact .contact2-send-message-right {
+    margin: auto;
+}
+.contact-form-area {
+	padding:97px 0 60px 0px;
+}
+.contact-form-area h2 {
+	max-width:753px;
+	margin:0 auto;
+	text-align:center;
+}
+.page-template-contact-us {
+	    background: rgba(244, 247, 249, 1);
+}
+.page-template-contact-us  section.page-contact {
+    background: rgba(244, 247, 249, 1);
+    background: linear-gradient(180deg, rgba(244, 247, 249, 1) 50%, rgba(255, 255, 255, 1) 50%);
+	padding-bottom:100px;
+}
+/* *********************   employment page   ********************* */
+section.apply-sec {
+    background: #F4F7F9;
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+.apply-sec .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-inline: 100px;
+}
+.apply-sec h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.apply-input-grp2 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+}
+
+.apply-input-grp2 .apply-input-container {
+    flex: 1 0 200px;
+}
+
+.apply-input-container {
+    /* background: white; */
+    /* padding: 16px; */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.apply-input-container textarea {
+    resize: none;
+    outline: none;
+}
+
+.apply-input-container input,
+.apply-input-container textarea{
+    font-size: 0.9rem;
+    color: #1C3352;
+    outline: none;
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    background: #FFF;
+    padding: 20px;
+    position: relative;
+    
+    z-index: 1;
+    font-family: 'Poppins';
+}
+.apply-input-container select {
+    font-size: 0.9rem;
+    color: #1C3352;
+    outline: none;
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    background: #FFF;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.6;
+    font-family: 'Poppins';
+}
+.apply-input-container label,
+.apply-input-container select+label {
+    /* position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 2; */
+    font-size: 18px;
+    font-weight: 500;
+    /* transition: 0.5s; */
+    color: #1C3352;
+    margin-bottom: 16px;
+    display: block;
+    background-color: transparent;
+}
+
+
+
+.apply-input-container textarea::placeholder {
+    color: #1C3352;
+    opacity: 0.7;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.apply-input-container select#Positionn,
+.apply-input-container select#Position {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 98%;
+	background-image:url(https://i.ibb.co/sy1sJ21/Vector.png);
+}
+.new-submit-btn,
+.inner-apply-sec button {
+    background: #3C81C5;
+    width: 60%;
+    padding: 17px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.smart-vehicle {
+    border-top: 1px solid #0000002b;
+    padding-top: 50px;
+}
+
+.smart-vehicle-image {
+    width: 49%;
+}
+
+.smart-vehicle-image img {
+    height: 270px;
+    object-fit: cover;
+    width: 100%;
+}
+.contact2-send-message-right button {
+    background: #3C81C5;
+    width: 70%;
+    padding: 17px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+/ ********************   AJ fleet page   ******************** /
+
+
+section.fleeet {
+    background: #FFF;
+    padding: 100px 0;
+}
+
+.fleeet-contnt {
+    width: 50%;
+    padding-inline: 35px;
+}
+
+.fleeet-contnt p {
+    padding: 32px 0 44px;
+}
+
+section.book-limo2 {
+    background: #F4F7F9;
+    padding: 80px 0;
+}
+
+
+.ride-inner-content{
+	padding-left: 80px;
+}
+.select-ride-heading {
+    width: 47%;
+}
+
+.select-ride>p {
+    width: 47%;
+}
+
+.inner-book-limo2 span.small-heading,
+.inner-book-limo3 span.small-heading {
+    max-width: 96px;
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.select-ride-heading h2 {
+    padding-bottom: 48px;
+}
+
+.inner-book-limo2 {
+    display: flex;
+}
+
+.inner-book-limo3 {
+    display: flex;
+}
+
+.car-item>h2 {
+    padding-bottom: 55px;
+    padding-left: 5%;
+    background: #F4F7F9;
+}
+
+.car-item-image {
+    width: 100%;
+}
+
+.car-item-image img {
+    height: 600px;
+}
+
+.car-item-bottom {
+    padding-top: 66px;
+    position: relative;
+}
+
+.ride-cars .owl-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #F4F7F9;
+    width: 18%;
+}
+
+.now-card-avail {
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.book-now-cardd {
+    background: #FFF;
+    box-shadow: 0px 4px 74px 0px rgba(17, 18, 18, 0.08);
+    padding: 40px 28px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 410px;
+    height: 232px;
+    justify-content: space-between;
+    top: -50%;
+    right: 6%;
+}
+
+.now-card-avail img {
+    width: 40px;
+    height: 40px;
+}
+
+.book-now-card-text p {
+    padding: 18px 0 36px;
+    font-size: 16px;
+}
+
+.inner-founder-sec {
+    display: flex;
+    align-items: center;
+}
+.ride-cars .owl-theme .owl-nav [class*=owl-] {
+    background: transparent;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+.client-tstmnl .ti-widget.ti-goog .ti-review-item>.ti-inner, .ti-widget.ti-goog .ti-load-more-reviews-container .ti-load-more-reviews-button{
+        background-color: #1c3352 !important;
+}
+
+
+/* =====car-services-template==== */
+
+section.mainn-banner.car-page-tamplate-banner h1 {
+    text-align: center;
+}
+
+section.car-page-tamplate-wrapp {
+    padding: 80px 0;
+}
+
+.car-page-tamplate-inner-wrap p {
+    opacity: 100%;
+}
+
+.car-page-tamplate-inner-wrap p img {
+    width: 100%;
+    object-fit: cover;
+    height: 360px;
+    display: block;
+}
+
+.car-page-tamplate-inner-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.car-page-tamplate-inner-wrap ul li a {
+    color: #3C81C5 !important;
+}
+
+.car-page-tamplate-inner-wrap p iframe {
+    width: 100% !important;
+}
+
+
+/* *********************   responsive   ********************* */
+
+
+
+@media screen and (max-width: 1680px) {
+    .inner-header .all-btn {
+        margin-top: 0;
+        display: inline-block;
+        width: 14%;
+        text-align: end;
+    }
+	.navbar>div>ul,
+    .navbar>ul {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .logo {
+        width: 193px;
+        height: 58px;
+    }
+
+}
+
+@media screen and (min-width: 1441px) {
+    .car-item-image img {
+        height: auto;
+    }
+
+    .banner-swiper {
+        height: 100vh;
+    }
+
+    .slider-bg {
+        background-position: bottom;
+    }
+
+    .slider-name1 h1 {
+        font-size: 90px;
+    }
+
+    .slider-name1 span {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    section.mainn-banner {
+        height: 55vh;
+    }
+
+    .mainn-banner h1 {
+        top: 4.5%;
+    }
+
+    .slider-frame {
+        top: 115px;
+        /* width: 455px;
+        height: 590px; */
+    }
+
+    .slider-name1 {
+        padding-top: 225px;
+        padding-left: 90px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .banner-swiper {
+        height: 110vh;
+    }
+    .detail-banner h1 {
+        top: 4.5%;
+    }
+    section.detail-banner {
+        height: 55vh;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-inline: 15px;
+    }
+
+    .mainn-banner h1 {
+        top: 4%;
+    }
+    .detail-banner h1 {
+        top: 4%;
+    }
+    h2 {
+        font-size: 45px;
+    }
+
+    .inner-header .all-btn {
+        width: 13%;
+    }
+
+    .inner-header .all-btn .btn {
+        padding: 16px 35px;
+    }
+
+    .footer-social-bottom-list ul {
+        gap: 70px;
+        padding-inline: 100px;
+    }
+
+    .footer-top h2 {
+        font-size: 68px;
+        line-height: 75px;
+    }
+
+    .get-in-touch li {
+        gap: 10px;
+    }
+
+    .blog-main-cntnt h2 {
+        font-size: 45px;
+    }
+
+    .social-icons {
+        width: 26%;
+    }
+
+    .get-in-touch {
+        width: 22%;
+    }
+
+    .logo {
+        width: 18%;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    .thanx p {
+        width: 70%;
+    }
+.servive2-inner.aj-home-chicago-services {
+        row-gap: 20px;
+    }
+    
+    section.blog-detail .container {
+        padding: 67px 170px 74px 90px;
+    }
+
+
+    .book-lemo-content h2 {
+        width: 90%;
+    }
+
+    .thanx h2 {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .video-player {
+        width: 100%;
+        height: 532px;
+        position: relative;
+    }
+
+    .roadshoww-image img {
+        height: 590px;
+    }
+
+    section.offers-solution-w {
+        padding: 80px 0 80px;
+    }
+
+    .send-message .container>h2 {
+        font-size: 45px;
+    }
+
+    .sp-occasion-image img {
+        height: 330px;
+    }
+
+    .sp-occasion-image {
+        margin-left: 13%;
+        width: 22%;
+        margin-bottom: -16%;
+        margin-top: -16%;
+    }
+
+    .profile-pic img {
+        height: 84px;
+    }
+
+    .sp-left-image img {
+        height: 320px;
+    }
+
+    .offer-solution-right-contnt {
+        width: 90%;
+        margin-left: 18%;
+    }
+
+
+
+    .offer-solution-right-contnt2 {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .offer-solution-left-image img {
+        height: 340px;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) .sp-right-image img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .corporate-left-image-w img {
+        height: 340px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sp-right-image img {
+        height: 190px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .spp-right-image img {
+        height: 275px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ground-transportation-contnt h4 {
+        padding: 30px 0 24px;
+    }
+
+    .roadshow-contnt h3 {
+        padding-top: 30px;
+    }
+
+    .road-show-heading {
+        width: 38%;
+    }
+
+    .about2-in-sec {
+        width: 55%;
+        padding-right: 60px;
+    }
+
+.aj-home-chicago-services .serv-card {
+        padding-inline: 12px;
+        width: 33.33%;
+        height: 340px;
+    }
+    .serv-card {
+        padding-inline: 12px;
+        width: 33.33%;
+        height: 300px;
+    }
+
+    .right-inderies {
+        width: 41%;
+        padding: 70px 0 0px 20px;
+        background-color: #0E1F35FA;
+    }
+
+    .inderies-horizontle p {
+        width: 365px;
+    }
+
+    .inderies-horizontle-image {
+        margin: 20px 0;
+    }
+
+    .inderies-horizontle-image img {
+        width: 55px;
+        height: 42px;
+    }
+
+    .airport-image {
+        width: 640px;
+    }
+
+    .airport-image img {
+        height: 350px;
+    }
+
+    .js-ag-faq_text {
+        height: auto;
+    }
+
+    .road-show .airport-image {
+        width: 500px;
+        top: 43%;
+    }
+
+    .road-show .airport-image img {
+        height: 285px;
+    }
+
+    .book-lemo-para {
+        width: 43%;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .inner-header {
+        padding: 12px 40px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .slider-name1 {
+        padding-top: 180px;
+        padding-left: 50px;
+    }
+
+    .banner-swiper {
+        height: 100vh;
+    }
+
+    .slider-frame {
+        top: 115px;
+        width: 430px;
+        height: 640px;
+        right: 55px;
+    }
+
+    .slider-name1 h1 {
+        font-size: 65px;
+    }
+
+    section.mainn-banner {
+        height: 42vh;
+    }
+
+    .mainn-banner h1 {
+        top: 5.5%;
+    }
+    .detail-banner h1 {
+        top: 5.5%;
+    }
+    .inner-header .all-btn .btn {
+        padding: 14px 30px;
+    }
+	.navbar>div>ul,
+    .navbar>ul {
+        width: 80%;
+    }
+
+    section.offers-solution {
+        padding-top: 150px;
+    }
+
+    .corporate-left-image img {
+        height: 302px;
+    }
+
+    .corporate-right-image img {
+        height: 200px;
+    }
+
+/*     .navbar>ul {
+        width: 80%;
+    } */
+
+    .corporate-left-image {
+        margin-top: 265px;
+    }
+
+    .inner-header .all-btn .btn {
+        padding: 16px 26px;
+    }
+
+    .corporate-left .small-heading {
+        margin-right: 5px;
+    }
+
+    section.detail-banner {
+        height: 42vh;
+    }
+
+    .offer-solution-right {
+        width: 42%;
+    }
+
+    .offer-solution-left-image img {
+        height: 330px;
+    }
+
+    .offer-solution-right-image2 img {
+        height: 230px;
+    }
+
+    .book-ride-contnt {
+        width: 55%;
+    }
+
+
+
+    .card-text p {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .about2-image img {
+        width: 460px;
+        height: 315px;
+    }
+
+    .about2-image {
+        width: 460px;
+        height: 315px;
+    }
+
+    .right-inderies p {
+        padding: 30px 0;
+    }
+
+    section.client-tstmnl {
+        padding: 100px 0 100px 50px;
+    }
+
+    .inner-client-tstmnl {
+        padding: 30px 20px;
+    }
+
+    .inner-client-tstmnl p {
+        margin: 17px 0 27px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .inner-client-pro-img {
+        display: flex;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .client-pro-title span {
+        margin-top: 2px;
+        display: block;
+    }
+
+    .footer-social-bottom-listtt a {
+        font-size: 16px;
+    }
+
+    .footer-social-bottom-listtt ul {
+        display: flex;
+        gap: 50px;
+    }
+
+    .airport-image img {
+        height: 270px;
+    }
+
+    .airport-image {
+        width: 500px;
+        top: 50%;
+    }
+
+    .founder-contnt {
+        padding-inline: 25px;
+    }
+
+    .about2-image-chicago {
+        width: 434px;
+        height: 370px;
+    }
+
+    .about2-image-chicago img {
+        width: 434px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-top h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    section.about2 {
+        padding: 60px 0 100px;
+    }
+
+    .footer-top {
+        padding: 80px 0px 70px 0px;
+    }
+
+    .slider-frame {
+        top: 115px;
+        width: 400px;
+        height: 640px;
+        right: 55px;
+    }
+
+    .footer-logo-sec {
+        width: 30%;
+    }
+
+    .quick-link {
+        width: 30%;
+    }
+
+    .get-in-touch {
+        width: 30%;
+    }
+
+    .social-icons {
+        width: 100%;
+    }
+
+    .newsletter-grp {
+        width: 75%;
+    }
+
+    .newsletter-grp input {
+        padding: 8px 0;
+        font-size: 20px;
+    }
+
+    section.blogs {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 44px;
+        top: var(--swiper-pagination-top, auto);
+        left: 10%;
+        width: 50%;
+    }
+
+    .send-message .container>h2 {
+        font-size: 40px;
+    }
+
+    section.mainn-banner {
+        height: 37vh;
+    }
+
+    .mainn-banner h1 {
+        top: 5%;
+        width: 67%;
+    }
+    .detail-banner h1 {
+        top: 5%;
+        width: 90%;
+    }
+    .inner-header .all-btn {
+        width: 16%;
+    }
+.navbar>div>ul,
+    .navbar>ul {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 57%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar li a {
+        font-size: 14px;
+    }
+
+    section.blog-detail .container {
+        padding: 60px 60px 60px 60px;
+    }
+
+    .blog-detail .blog-detail-profile-image-box {
+        padding: 40px 0;
+    }
+
+    .inner-detail-blogs {
+        padding-bottom: 60px;
+    }
+
+    section.book-lemo {
+        padding: 60px 15px;
+    }
+
+    .book-lemo-para {
+        width: 46%;
+    }
+
+    .pickup-airport {
+        padding-top: 60px;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    section.founder {
+        padding: 60px 0 0;
+    }
+
+    section.corporate-treval {
+        padding: 60px 0;
+    }
+
+    .Professional-Chauffeurs-left2 {
+        width: 48%;
+    }
+
+    .roadshoww-image img {
+        height: 535px;
+    }
+
+    section.book-ride {
+        padding: 0px 0 60px;
+    }
+
+    .Professional-Chauffeurs-left2 h2 {
+        padding-bottom: 30px;
+    }
+
+    .Professional-Chauffeurs2 .Professional-Chauffeurs-cntnt {
+        width: 95%;
+    }
+
+    .Professional-Chauffeurs-cntnt h3 {
+        padding: 10px 0 20px;
+    }
+
+    section.schedule {
+        padding: 0px 0 60px;
+    }
+
+    section.thanx {
+        padding: 0px 0 30px;
+    }
+
+    section.thanx2 {
+        padding: 60px 0 255px;
+    }
+
+    section.vedio {
+        padding-bottom: 60px;
+    }
+
+    .book-lemo-para p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    .special-occasion-3 {
+        padding: 60px 0;
+        background: #F4F7F9;
+    }
+
+    section.corporate-treval-w {
+        padding: 60px 0 0;
+    }
+
+    .corporate-left-image-w img {
+        height: 300px;
+    }
+
+    .corporate-left-image-w {
+        margin-bottom: -20%;
+        margin-top: -10%;
+    }
+
+    .corporate-right-w h4 {
+        padding: 30px 0 30px;
+    }
+
+    .inner-special-occasion {
+        padding-bottom: 60px;
+    }
+
+
+
+    .corporate-right h4 {
+        padding: 30px 0 24px;
+    }
+
+    .offer-solution-left-image img {
+        height: 260px;
+    }
+
+    section.offers-solution-w {
+        padding: 60px 0 60px;
+    }
+
+    .offer-solution-right-image2 img {
+        height: 180px;
+    }
+
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .book-ride-contnt {
+        width: 60%;
+    }
+
+    .schedule-top h2 {
+        width: 60%;
+    }
+
+    .schedule-cntnt h3 {
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .schedule-bottom {
+        padding-top: 60px;
+    }
+
+    .Professional-Chauffeurs-left h2 {
+        padding-bottom: 30px;
+    }
+
+    .video-player {
+        width: 100%;
+        height: 385px;
+        position: relative;
+    }
+
+    .item-namee h3 {
+        font-family: 'Poppins';
+        padding-bottom: 12px;
+        line-height: 1;
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .item-image img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .availability-card {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .founder-contnt h2 {
+        padding: 0px 0 30px;
+    }
+
+    .founder-contnt>p {
+        padding-bottom: 25px;
+    }
+
+    .founder-name span.small-heading {
+        padding: 10px 0 25px;
+    }
+
+    .philosofy-diff-left {
+        flex-direction: column;
+    }
+
+    section.philosofy-diff {
+        padding: 60px 0;
+    }
+
+    .philosofy-diff-image {
+        width: 100%;
+    }
+
+    section.fleet {
+        padding: 60px 0 60px;
+    }
+
+    section.Professional-Chauffeurs {
+        padding: 60px 0 60px;
+    }
+
+    section.commitment {
+        padding: 60px 0;
+    }
+
+    .inner-commitment-sec {
+        padding-top: 60px;
+    }
+
+    .Professional-image1 img {
+        height: 400px;
+    }
+
+    .Professional-image2 img {
+        height: 280px;
+    }
+
+    .Professional-Chauffeurs2 .Professional-image2 {
+        bottom: 150px;
+        left: 0%;
+    }
+
+    .Professional-image2 {
+        bottom: 0px;
+        left: 0%;
+    }
+
+    section.Professional-Chauffeurs2 {
+        padding: 60px 0 60px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .Professional-Chauffeurs-cntnt {
+        padding-left: 0;
+    }
+
+    section.fleeet {
+        padding: 60px 0;
+    }
+
+    section.book-limo2 {
+        padding: 60px 0;
+    }
+
+    .select-ride-heading h2 {
+        padding-bottom: 30px;
+    }
+
+    .car-item-image img {
+        height: 425px;
+    }
+
+    .book-now-cardd {
+        width: 355px;
+        height: 200px;
+        top: -38%;
+        right: 6%;
+    }
+
+    .now-card-avail img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .book-now-card-text p {
+        padding: 14px 0 22px;
+        font-size: 16px;
+    }
+
+/*     section.ride-cars {
+        padding: 40px 0 60px;
+    } */
+
+    .car-item-bottom {
+        padding-top: 35px;
+        position: relative;
+    }
+
+    section.ground-tranportation {
+        padding: 60px 0;
+    }
+
+    .ground-transportation-image img {
+        height: 330px;
+    }
+
+    .ground-transportation-contnt {
+        width: 48%;
+    }
+
+    section.why-roadshow {
+        padding: 60px 0;
+    }
+
+    .roadshow-image img {
+        height: 380px;
+    }
+
+    .roadshow-contnt p {
+        padding-top: 15px;
+    }
+
+    .roadshow-contnt {
+        width: 47%;
+    }
+
+    .sp-oc-big-image {
+        width: 100%;
+    }
+
+    .sp-oc-big-image img {
+        height: 235px;
+    }
+
+    .special-occasion-2 {
+        padding: 60px 0;
+    }
+
+    .in-sp-right {
+        width: 44%;
+    }
+
+    .sp-left-image img {
+        height: 270px;
+    }
+
+    .sp-left h4 {
+        padding: 0px 0 0px;
+    }
+
+    .in-sp-left {
+        padding-top: 0px;
+        width: 43%;
+        padding-left: 80px;
+    }
+
+    .inner-special-occasion3 .in-sp-right .sp-right:nth-child(2) {
+        margin-top: 60px;
+    }
+
+    section.ground-review {
+        padding: 60px 0;
+    }
+
+    .review-item {
+        padding-top: 60px;
+    }
+
+    .review-image img {
+        height: 495px;
+    }
+
+    .review-contnt {
+        width: 48%;
+        padding-top: 30px;
+    }
+
+    .ground-review .owl-nav {
+        position: absolute;
+        right: 36%;
+        bottom: 0px;
+    }
+
+    .send-message-right {
+        height: auto !important;
+    }
+
+    .card-grp {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .message-card {
+        width: 100%;
+        height: 280px;
+    }
+
+    section.send-message {
+        padding: 60px 0 190px;
+    }
+
+    section.mapp {
+        padding-bottom: 60px;
+    }
+
+    .send-message .container>h2 {
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    .send-message-right h2 {
+        font-size: 40px;
+    }
+
+    .airport-image img {
+        height: 260px;
+    }
+
+    .roadshowq-image img {
+        height: 655px;
+    }
+
+    section.road-show {
+        padding: 60px 15px;
+    }
+
+    section.offers-solution {
+        padding-bottom: 60px;
+    }
+
+    section.why-aj {
+        padding: 60px 0;
+    }
+
+    .private-drivers-heading {
+        width: 48%;
+    }
+
+    .private-drivers-image {
+        width: 46%;
+    }
+
+    .private-image img {
+        height: 235px;
+    }
+
+    .watch-vedio-heading {
+        width: 40%;
+        padding-right: 30px;
+    }
+
+    .watch-vedio-vedio {
+        width: 60%;
+    }
+
+    .watch-vedio-vedio iframe {
+        height: 350px;
+    }
+
+    section.private-drivers {
+        padding: 60px 0;
+    }
+
+    section.watch-vedio {
+        padding: 60px 0 0;
+    }
+
+    .Professional-Chauffeurs-left {
+        width: 48%;
+    }
+
+    .Professional-Chauffeurs-right {
+        width: 50%;
+        height: 615px;
+    }
+
+    section.fleet-why-aj {
+        padding: 60px 0;
+    }
+
+    .pa-fleet {
+        padding-bottom: 0px;
+        padding-top: 60px;
+    }
+
+    .pa-why-aj-btm {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .pa-why-aj-tp-2 {
+        padding: 0px 0;
+    }
+
+    section.airport-why-aj-2 {
+        background: #F4F7F9;
+        padding: 60px 0;
+    }
+
+    .pa-why-aj-btm-2 {
+        padding: 60px 0px 60px;
+    }
+
+    .in-pa-why-aj-btm-2 {
+        padding-top: 60px;
+    }
+
+    .shuttle-service .pa-why-aj-2 {
+        padding-top: 60px;
+    }
+
+    .inner-pa-why-aj-btm-2 {
+        padding-inline: 50px;
+    }
+
+    section.shuttle-service {
+        padding: 60px 0;
+    }
+
+    .pa-why-aj-heading-2 h3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .pa-offer {
+        padding: 60px 0;
+    }
+
+    .review-contnt>p {
+        padding: 30px 0 30px;
+    }
+
+    .offer-solution-right-contnt {
+        width: 82%;
+        margin-left: 10%;
+    }
+
+    section.global-fleet {
+        padding-top: 60px;
+    }
+
+    .premium-limo-para {
+        width: 70%;
+        padding-top: 60px;
+    }
+
+    section.premium-limo-cards {
+        padding-bottom: 60px;
+    }
+
+    .airport-why-aj-btm {
+        row-gap: 50px;
+    }
+
+    /* section.airport-why-aj-2 {
+        padding-bottom: 60px;
+    } */
+
+    .limo-image img {
+        height: 260px;
+    }
+    section.detail-banner {
+        height: 37vh;
+    }
+    .limo-txt {
+        padding: 10px 14px 10px 14px;
+        align-items: center;
+    }
+
+    .airport-why-in-image-2 img {
+        height: 335px;
+    }
+
+    section.hotel-nearme {
+        padding: 60px 0 60px;
+    }
+
+    section.hotel-why-aj-2 {
+        padding-bottom: 30px;
+    }
+
+    .events-big-image img {
+        height: 355px;
+    }
+
+    section.events-big {
+        padding: 60px 0;
+    }
+
+    section.exxecutive-fleet {
+        padding: 60px 0 60px;
+    }
+
+    .EVENT-Professional-image1 img {
+        height: 410px;
+    }
+
+    section.event-why-aj {
+        padding: 60px 0;
+    }
+
+    .inner-special-occasion3 .in-sp-left {
+        /* padding-top: 70px; */
+        width: 43%;
+        padding-left: 80px;
+    }
+
+    .sp-occasion-image img {
+        height: 300px;
+    }
+
+    section.service2 {
+        padding: 60px 0;
+    }
+
+.aj-home-chicago-services .serv-card {
+        padding-inline: 12px;
+        width: 50%;
+        height: 330px;
+    }
+    .serv-card {
+        padding-inline: 12px;
+        width: 50%;
+        height: 285px;
+    }
+    
+
+    .servive2-inner {
+        row-gap: 20px;
+    }
+    
+    .inderies-horizontle h2 {
+        color: #fff;
+        font-size: 30px;
+        width: 330px;
+    }
+
+    .right-inderies h2 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .inderies-horizontle p {
+        width: 330px;
+        font-size: 14px;
+    }
+
+    .right-inderies {
+        width: 41%;
+        padding: 50px 0 0px 20px;
+    }
+
+    .inderies-horizontle {
+        padding: 50px 10px 0px 15px;
+    }
+
+    .inderies-card {
+        min-height: 480px;
+        height: 480px;
+    }
+
+    .right-inderies p {
+        font-size: 14px;
+    }
+
+    section.client-tstmnl {
+        padding: 60px 0 60px 15px;
+    }
+
+    .client-tstmnl-heading {
+        width: 35%;
+        position: relative;
+    }
+
+    .client-tstmnl-slider {
+        width: 65%;
+    }
+
+    .social-iconsss {
+        margin: auto;
+    }
+
+    .corporate-left-w h4 {
+        margin: 32px 0 32px;
+    }
+
+    .offer-solution-heading h4 {
+        margin: 24px 0 24px;
+    }
+
+    .philosofy-diff-image img {
+        height: 260px;
+    }
+
+    section.elevate-jrny {
+        background: #F4F7F9;
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+
+    section.contact2-send-message {
+        padding: 60px 0 60px;
+    }
+
+    section.location-map {
+        padding: 60px 0 0px;
+    }
+
+    .map-in-list li a {
+        font-size: 16px;
+    }
+
+    section.map-list {
+        padding: 60px 0;
+    }
+
+    .slider-name1 span {
+        font-size: 25px;
+    }
+
+    .slider-name1 h1 {
+        font-size: 60px;
+    }
+
+    .innnr-philosfy-diff h4 {
+        padding-top: 15px;
+        padding-right: 18px;
+    }
+
+    .left-special-occasion2 {
+        width: 46%;
+    }
+
+    .ground-transportation-contnt h4 {
+        padding: 24px 0 24px;
+        font-size: 22px;
+    }
+
+    .pickup-airport-contnt h4 {
+        font-size: 22px;
+    }
+
+    section.pd-expensive {
+        padding: 60px 0;
+        background: #F4F7F9;
+        margin-bottom: 60px;
+    }
+	section.pd-expensive.good-personal-main{
+		padding: 0;
+    margin-bottom: 0;
+		background:transparent;
+	}
+    .sp-right-image img {
+        height: 160px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .spp-right-image img {
+        height: 235px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    section.LIMOUSINE-service {
+        padding: 60px 0;
+    }
+
+    section.hotel-limo-service {
+        padding: 60px 0;
+    }
+
+    section.concert-service {
+        padding: 50px 0 60px;
+    }
+
+    section.special-occasion-2 {
+        background: #F4F7F9;
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+
+    section.chicago-about2 {
+        padding: 60px 0 60px;
+    }
+
+    section.service2-chicago {
+        background: #fff;
+        padding: 60px 0;
+    }
+
+    .blog-image img {
+        height: 270px;
+        /* border: 10px solid #F2F2F2; */
+    }
+    .blog-image {
+        border: 10px solid #F2F2F2;
+        height: 280px;
+    }
+    section.mappp {
+        padding-bottom: 60px;
+    }
+
+    .in-mapp iframe {
+        height: 387px;
+        width: 100%;
+    }
+    section.blogs-page {
+        padding: 60px 0;
+    }
+    section.apply-sec {
+        background: #F4F7F9;
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+    .apply-sec .container {
+        padding-inline: 55px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+	ul.sub-menu>li:hover span {
+    transform: rotate(45deg);
+}
+ul#menu-header-menu > li:hover span.down-arrow {
+   transform: rotatex(180deg);
+}
+    .navbar ul#menu-header-menu > li {
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+    }
+    ul#menu-header-menu{
+        margin-bottom: -50px;
+    }
+    .navbar ul.sub-menu {
+        display: block !important;
+        position: absolute;
+        width: 400px;
+        top: 53px;
+        background: #fff;
+        left: -150px;
+        padding: 16px 20px 2px 20px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-15px);
+        transition: all .3s ease-in-out;
+		box-shadow: 0 0px 13px rgba(0,0,0,.3);
+    z-index: -1;
+    }
+   
+    .navbar ul.in-sub-menu {
+        transition: all 0.4s ease-in-out;
+        width: 280px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        background: #F2F2F2;
+        display: block !important;
+        padding: 24px 24px 6px 24px;
+        top: 0 !important;
+        z-index: -1;
+    }
+    ul.sub-menu > li:hover .in-sub-menu {
+        left: auto;
+    right: 0;
+    transform: translateX(100%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar .sub-menu li a {
+        text-transform: capitalize;
+    }
+    /* ul.nav-menu .sub-menu span {
+        position: absolute;
+        top: 13px;
+        right: 135px;
+    } */
+
+    .sub-menu span i {
+        font-size: 12px;
+    }
+    ul#menu-header-menu > li:hover ul.sub-menu{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+ 
+    .navbar .sub-menu li:hover {
+        background-color: #0F1F35;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar .sub-menu li:hover .right-arrow img {
+        transform: rotate(0deg);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar .in-sub-menu li:hover {
+        background-color: #0F1F35;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar .sub-menu li:hover a {
+        color: #fff;
+    }
+
+    .navbar .in-sub-menu li:hover a {
+        color: #fff !important;
+    }
+    ul.nav-menu li>span {
+        display: inline-flex;
+        cursor: pointer;
+        /* padding-left: 5px; */
+        transition: all .4s ease-in-out;
+        /* position: static; 
+    right: -25px; 
+        top: 10px;
+        width: 14px;
+        height: 7px; */
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+	.chicago-service .inner-roadshow-upper:nth-child(even) .inner-roadshow {
+    flex-direction: column-reverse;
+}
+	.chicago-service .inner-roadshow-upper {
+    padding: 70px 0;
+}
+	.airport-why-aj-2-top-heading h2, .airport-why-aj-2-top-heading p,
+	.bleisure-travel-heading,.bleisure-travel-content {
+		    flex: 0 0 100%;
+	}
+	.bleisure-travel-heading{
+		margin-bottom:28px;
+	}
+	.airport-why-aj-2-top-heading p {
+		margin-top:25px;
+	}
+	.pa-why-aj-tp-2 {
+    padding: 0;
+    margin: 0;
+}
+
+    #hamburger-6.is-active {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #hamburger-6.is-active .line:nth-child(2) {
+        width: 0px;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1),
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1) {
+        -webkit-transform: translateY(13px);
+        -ms-transform: translateY(13px);
+        -o-transform: translateY(13px);
+        transform: translateY(8px);
+    }
+
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transform: translateY(-13px) rotate(90deg);
+        -ms-transform: translateY(-13px) rotate(90deg);
+        -o-transform: translateY(-13px) rotate(90deg);
+        transform: translateY(-13px) rotate(90deg);
+    }
+
+    .row .three {
+        padding: 80px 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+    }
+
+    .hamburger .line {
+        width: 36px;
+        height: 2px;
+        background-color: #ffffff70;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger .line:nth-child(2) {
+        width: 28px;
+        height: 2px;
+        background-color: #ffffff70;
+        margin-right: 0;
+    }
+
+    .three col {
+        position: relative;
+    }
+
+    .hamburger.is-active {
+        z-index: 999999999 !important;
+        position: relative;
+        /* top: 16px;
+        right: 16px; */
+    }
+
+    .hamburger.is-active span {
+        background: #000;
+        width: 30px;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .menusflex {
+        position: fixed;
+        top: 125px;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        transition: 0.5s ease-in-out;
+        z-index: 999999;
+        right: -100%;
+        padding: 20px 0px 75px 0px;
+    }
+
+    .menusflex.active {
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    /* .active main#main {
+        margin-top: 0;
+    } */
+    /* .bgg-clr .top-header {
+        padding: 0;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    } */
+    .menusflex ul li a {
+        color: #000;
+        padding: 10px 20px 10px 18px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+    }
+.menusflex>div>ul,
+    .menusflex>ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: auto;
+        width: 100%;
+        padding-bottom: 110px;
+    }
+	.social-iconsss.mobile-menu-sss-icon ul {
+    display: block;
+    text-align: center;
+}
+#menu-header-menu {
+    width: 100%;
+}
+    .three.col {
+        position: absolute;
+        top: 22px;
+        right: 16px;
+        display: inline-block;
+    }
+
+    .span-height {
+
+        right: 0 !important;
+    }
+
+    .navbar>span {
+        right: -100%;
+        transition: 0.5s ease-in-out;
+        background: #fff;
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        top: 125px;
+        z-index: 1;
+    }
+
+    .navbar li:hover::before {
+        width: 100%;
+        border-color: #fff;
+        display: none;
+    }
+
+    .navbar {
+        align-items: start;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+.navbar>div>ul>li, 
+    .navbar>ul>li {
+        margin-bottom: 20px;
+    }
+
+    .scroll-nav .hamburger .line {
+        background: #000;
+        transition: all .4s ease-in-out;
+    }
+
+    .inner-header .navbar .down-arrow img {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(77deg) brightness(93%) contrast(104%);
+        transition: all .4s ease-in-out;
+		    width: 15px;
+    height: 9px;
+    }
+
+    .send-message .container>h2 {
+        font-size: 35px;
+    }
+
+/*     .in-sub-menu {
+        transition: none;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        display: none;
+        padding: 10px 0px 0px 0px;
+        top: 75px;
+        z-index: 1;
+        width: 100%;
+		left:-100%;
+		
+    } */
+
+    .navbar .in-sub-menu.visible {
+        background: #F2F2F2;
+        /* background-color: #0F1F35; */
+        left: 0px;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(100%);
+        width: 100%;
+        display: block !important;
+    }
+   .in-sub-menu {
+        transition: none;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        display: none;
+        padding: 10px 0px 0px 0px;
+        top: 75px;
+        z-index: 1;
+        width: 100%;
+		left:0;
+	   height:100%;
+	z-index:9;
+    }
+	.in-sub-menu.right-sub-menu{
+		left: 0;
+		top:0;
+	}
+	.navbar .in-sub-menu li{
+		padding-left:20px !important;
+	}
+	span.right-arrow.active-arrow.active-right-arrow {
+		    transform: rotate(135deg);
+/* 			position: absolute !important;
+			top: 0;
+			bottom: auto; */
+		}
+/* ul.sub-menu li span.right-arrow {
+    position: relative;
+	z-index:999;
+} */
+    /* .mobile-none {
+        display: none;
+    } */
+
+    .active .mobile-menu-sss-icon {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        /* left: 0; */
+        right: 0;
+
+    }
+    .active .logo-invert .after-logo {
+        visibility: visible;
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .active .logo-invert .default-logo {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .logo-invert .after-logo {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .logo-invert .default-logo {
+        visibility: visible;
+        display: inline-block;
+        opacity: 1;
+    }
+    .mobile-menu-sss-icon {
+        right: -100%;
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        padding-bottom: 30px;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .mobile-menu-sss-icon>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-menu-sss-icon li {
+        display: inline-flex;
+        width: auto;
+    }
+
+    ul.nav-menu li>span {
+        display: inline-flex;
+		align-items:center;
+		justify-content:center;
+        cursor: pointer;
+        /* padding-left: 5px; */
+        transition: all .4s ease-in-out;
+       position: absolute; 
+        right: 18px;
+        top: 16px;
+        bottom: 0;
+        z-index: 5;
+        width: 30px;
+        height: 30px;
+    }
+ul.sub-menu {
+    display: none;
+}
+	.scroll-nav.inner-header .navbar .down-arrow img {
+		width:15px;
+		height:9px;
+		transition:all .3s ease-in-out;
+	}
+	.right-arrow img {
+    position: static;
+    width: 25px;
+    height: 25px;
+}
+	.scroll-nav.inner-header .navbar .down-arrow.active-arrow img{
+		    transform: rotateX(180deg);
+
+	}
+    /* ul.sub-menu li:hover>span{
+        transform: rotate(45deg);
+    } */
+    ul.sub-menu li>span {
+        display: inline-flex;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 50px;
+    }
+
+    .navbar .sub-menu li,
+    .navbar .in-sub-menu li {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        margin-bottom: 0;
+        border-bottom: 1px solid #d6d6d6;
+        position: relative;
+    }
+
+    .navbar .sub-menu li a {
+        padding: 25px 32px 25px 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+/*     .navbar .in-sub-menu li a {
+        font-size: 14px;
+        padding: 25px 32px 25px 45px;
+    } */
+
+    .logo {
+        width: 53%;
+        max-width: 142px;
+    }
+
+    .inner-header {
+        padding: 14px 16px 10px;
+        position: relative;
+    }
+
+    .navbar ul.in-sub-menu.visible {
+        background: #F2F2F2;
+        left: 0px;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(100%);
+        width: 100%;
+    }
+
+    .footer-top {
+        padding: 40px 0px 35px 0px;
+    }
+
+    .footer-top h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .special-occasion-3 {
+        padding: 30px 0;
+    }
+
+    .newsletter-form button {
+        padding: 5px 15px;
+    }
+
+    .footer-social-bottom-list ul {
+        gap: 25px;
+        padding-inline: 0px;
+        flex-wrap: wrap;
+    }
+
+    .banner-swiper {
+        height: auto;
+    }
+
+    .header-grp a {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 12px;
+    }
+
+    .slider-name1 {
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+    .slider-frame {
+        top: 240px;
+        width: 400px;
+        height: 550px;
+        right: 50px;
+        margin: auto;
+        position: unset;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .slider-bg {
+        flex-direction: column;
+    }
+
+    .get-in-touch {
+        width: 50%;
+    }
+
+    .quick-link {
+        width: 33%;
+    }
+
+    .footer-logo-sec {
+        width: 50%;
+    }
+
+    .social-icons {
+        width: 50%;
+    }
+
+    .footer-social-bottom-list {
+        padding-top: 30px;
+    }
+
+    .footer-middle {
+        padding: 30px 0 20px;
+    }
+
+    section.blogs {
+        padding: 30px 0;
+    }
+    .detail-banner h1 {
+        top: 4.5%;
+    }
+    .blog-main-cntnt {
+        align-items: flex-start;
+        justify-content: center;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .blog-main-cntnt p {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .blog-main-cntnt h2 {
+        font-size: 35px;
+    }
+
+    .blog-btn {
+        padding: 9px 15px;
+        font-size: 14px;
+    }
+    section.blogs-page {
+        padding: 30px 0;
+    }
+    .blog-btn img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .blog-bottom {
+        padding-inline: 0;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .inner-header .all-btn {
+           display:none;
+    }
+	.inner-header .all-btn.for-mobile{
+		 display: block;
+    width: 100%;
+    text-align: center;
+	}
+	.menusflex {
+    display: block;
+		    height: 83vh;
+
+}
+	.social-iconsss.mobile-menu-sss-icon ul {
+		padding-bottom:0;
+	}
+	.all-btn.for-mobile .btn {
+    background: #1C3352;
+    color: #fff;
+}
+	#menu-header-menu {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+    section.mainn-banner {
+        height: 30vh;
+    }
+
+    .mainn-banner h1 {
+        top: 4.5%;
+        width: 85%;
+    }
+
+    .blog-detail h2 {
+        font-size: 35px;
+        line-height: 150%;
+    }
+
+    section.blog-detail .container {
+        padding: 30px 60px 30px 60px;
+    }
+
+    .bloge-image {
+        margin-bottom: 30px;
+    }
+
+    .blog-detail h4 {
+        padding: 0px 0 25px;
+    }
+
+    .continue-reading h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .blog-detail p {
+        padding-bottom: 30px;
+    }
+
+    .inner-detail-blogs {
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .bloge-image img {
+        height: 265px;
+    }
+
+    section.book-lemo {
+        padding: 30px 15px;
+    }
+
+    .pickup-airport {
+        padding-top: 165px;
+    }
+
+    .book-lemo-content h2 {
+        width: 100%;
+    }
+
+    .book-lemo-para {
+        width: 100%;
+    }
+
+    .book-lemo-content {
+        flex-direction: column;
+    }
+
+    section.founder {
+        padding: 30px 0 30px;
+    }
+
+    .pickup-airport {
+        flex-direction: column-reverse;
+    }
+
+    .pickup-airport-contnt {
+        width: 100%;
+    }
+
+    .airport-image {
+        width: 300px;
+        top: 34%;
+    }
+
+    .airport-image img {
+        height: 162px;
+    }
+
+    .founder-image {
+        width: 100%;
+    }
+
+    .founder-contnt {
+        width: 100%;
+        padding-inline: 0px;
+        padding-bottom: 24px;
+    }
+
+    .inner-founder-sec {
+        flex-direction: column-reverse;
+    }
+
+    .fleeet-contnt .read-btn {
+        margin-bottom: 20px;
+    }
+
+    .corporate-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0px;
+    }
+
+    .corporate-right {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .corporate-travel-contnt {
+        flex-direction: column;
+    }
+
+    .corporate-left-image {
+        /* display: none; */
+        margin-top: -35%;
+        margin-bottom: 0%;
+        margin-left: 0;
+        width: 25%;
+    }
+
+    .Professional-Chauffeurs-left2 h2 {
+        padding-bottom: 30px;
+    }
+
+    .corporate-left-image img {
+        height: 240px;
+    }
+
+    .corporate-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.corporate-treval {
+        padding: 30px 0;
+    }
+
+    .corporate-right-image {
+        width: 100%;
+    }
+
+    .corporate-right-image img {
+        height: 400px;
+    }
+
+    section.offers-solution {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    section.offers-solution-w {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .inner-offer-solution {
+        flex-direction: column;
+    }
+
+    .inner-special-occasion3 .in-sp-left {
+        /* padding-top: 70px; */
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .offer-solution-left {
+        width: 100%;
+    }
+
+    .offer-solution-left-contnt {
+        margin-left: 10%;
+        padding-top: 30px;
+        width: 65%;
+    }
+
+    .offer-solution-right {
+        width: 100%;
+    }
+
+    .offer-solution-right-contnt {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .offer-solution-right-contnt2 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .offer-solution-left-contnt {
+        margin-left: 0;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .offer-solution-right-image img {
+        height: 410px;
+    }
+
+    .offer-solution-left-image img {
+        height: 500px;
+    }
+
+    .offer-solution-right-image2 img {
+        height: 400px;
+    }
+
+    .offer-solution-right-contnt2 h4,
+    .offer-solution-right-contnt h4 {
+        padding: 30px 0 24px;
+    }
+
+    .offer-solution-left-contnt h4 {
+        padding: 30px 0 24px;
+    }
+
+    section.book-ride {
+        padding: 0px 0 30px;
+    }
+
+    .book-ride-slider {
+        padding-top: 30px;
+    }
+
+    section.schedule {
+        padding: 0px 0 30px;
+    }
+
+    .schedule-cntnt .read-btn {
+        margin-top: 15px;
+    }
+
+    .schedule-bottom {
+        padding-top: 30px;
+    }
+
+    section.thanx {
+        padding: 0px 0 30px;
+    }
+
+    section.vedio {
+        padding-bottom: 30px;
+    }
+
+    section.fleet {
+        padding: 30px 0;
+    }
+
+    .fleet-contnt {
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .fleet-image {
+        width: 100%;
+    }
+
+    .fleet-name h4 {
+        padding: 30px 0 30px;
+    }
+
+    section.Professional-Chauffeurs {
+        padding: 30px 0;
+    }
+
+    .Professional-image1 img {
+        height: 290px;
+    }
+
+    .Professional-image2 img {
+        height: 270px;
+    }
+
+    .Professional-image2 {
+        bottom: 5%;
+        left: 0%;
+    }
+
+    .Professional-Chauffeurs-left h2 {
+        padding-bottom: 30px;
+    }
+
+    section.commitment {
+        padding: 30px 0;
+    }
+
+    .inner-commitment-sec {
+        padding-top: 30px;
+    }
+
+    .commtment-sec {
+        width: 50%;
+    }
+
+    .schedule-top h2 {
+        width: 80%;
+    }
+
+    .philosofy-diff-image img {
+        height: 320px;
+    }
+
+    section.philosofy-diff {
+        padding: 30px 0;
+    }
+
+    .philosofy-diff-text {
+        padding-left: 0;
+    }
+
+    .philosofy-diff-text h2 {
+        padding-bottom: 30px;
+    }
+
+    section.fleeet {
+        padding: 30px 0;
+    }
+
+    .fleeet-contnt {
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .ride-inner-content {
+        padding-left: 40px;
+    }
+
+    .car-item-image img {
+        height: 355px;
+    }
+
+    .book-now-cardd {
+        width: 305px;
+        height: 175px;
+        top: -30%;
+        right: 3%;
+        padding: 16px 16px;
+    }
+
+    section.book-limo2 {
+        padding: 30px 0;
+    }
+
+    section.ride-cars {
+        padding: 00px 0 30px;
+    }
+
+    section.ground-tranportation {
+        padding: 30px 0;
+    }
+
+    .ground-transportation-contnt h4 {
+        padding: 15px 0 24px;
+    }
+
+    section.why-roadshow {
+        padding: 30px 0;
+    }
+
+    .roadshow-contnt h3 {
+        padding-top: 12px;
+    }
+
+    .inner-special-occasion {
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .sp-occasion-image img {
+        height: 230px;
+    }
+
+    .special-occasion-image p {
+        padding-top: 30px;
+    }
+
+    .sp-oc-big-image img {
+        height: 185px;
+    }
+
+    .special-occasion-2 {
+        padding: 30px 0;
+    }
+
+
+
+    .sp-right-image img {
+        height: 345px;
+    }
+
+    .sp-left-image img {
+        height: 400px;
+    }
+
+    .inner-special-occasion3 .in-sp-right {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .corporate-left-w {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .corporate-right-image-w img {
+        height: 380px;
+    }
+
+    .corporate-right-image-w {
+        width: 100%;
+    }
+
+    .corporate-travel-contnt-w {
+        flex-direction: column;
+    }
+
+    .corporate-right-w {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .corporate-left-image-w img {
+        height: 230px;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) .sp-right-image img {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .corporate-left-image-w {
+        margin-bottom: -22%;
+        margin-top: 4%;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .spp-right-image img {
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    section.ground-review {
+        padding: 30px 0;
+    }
+
+    .profile-pic img {
+        height: 63px;
+    }
+
+    .review-contnt>p {
+        line-height: 28px;
+        padding: 30px 0 15px;
+    }
+
+    .profile-title {
+        width: 70%;
+    }
+
+    .ground-review .owl-nav {
+        position: absolute;
+        right: 6%;
+        bottom: 0px;
+    }
+
+    .review-image img {
+        height: 415px;
+    }
+
+    .review-contnt {
+        width: 48%;
+        padding-top: 0;
+    }
+
+    .inner-send-message {
+        flex-direction: column;
+    }
+
+    .send-message-left {
+        width: 100%;
+    }
+
+    .card-grp {
+        height: auto;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .message-card {
+        width: 50%;
+    }
+
+    .send-message-right {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    section.send-message {
+        padding: 30px 0 150px;
+    }
+
+    .send-message .container>h2 {
+        padding-bottom: 30px;
+    }
+
+    .send-message-right h2 {
+        font-size: 35px;
+    }
+
+    .road-show-content {
+        flex-direction: column;
+    }
+
+    .road-show-heading {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .inner-aj-why {
+        flex-direction: column-reverse;
+    }
+
+    .inner-aj-why span.small-heading {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .aj-why-left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .aj-why-right {
+        padding-top: 30px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    section.why-aj {
+        padding: 30px 0;
+    }
+
+    section.road-show {
+        padding: 30px 15px;
+    }
+
+    section.private-drivers {
+        padding: 30px 0;
+    }
+
+    .inner-private-drivers {
+        flex-direction: column;
+    }
+
+    .inner-special-occasion3 .in-sp-right .sp-right:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .private-drivers-heading {
+        width: 100%;
+    }
+
+    .private-drivers-image {
+        width: 100%;
+    }
+
+    .private-drivers-image h4 {
+        padding: 30px 0px 30px 0;
+    }
+
+    .private-drivers-heading .read-btn {
+        margin-top: 30px;
+    }
+
+    .private-image img {
+        height: 300px;
+    }
+
+    .watch-vedio-heading h2 {
+        padding-bottom: 30px;
+    }
+
+    section.watch-vedio {
+        padding: 30px 0 0;
+    }
+
+    .inner-watch-vedio {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .watch-vedio-heading {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .watch-vedio-vedio {
+        width: 100%;
+    }
+
+    .offer-solution-right-image img {
+        height: 380px;
+    }
+
+    section.Professional-Chauffeurs2 {
+        padding: 30px 0 30px;
+    }
+
+    section.fleet-why-aj {
+        padding: 30px 0;
+    }
+
+    .Professional-Chauffeurs2 .Professional-image2 {
+        bottom: 0px;
+        left: 0%;
+    }
+
+    .Professional-Chauffeurs2 .Professional-Chauffeurs-cntnt {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+
+
+    .pa-why-aj-tp-2 {
+        padding: 30px 0;
+    }
+
+    .pa-why-aj-heading-2 p {
+        padding-top: 25px;
+    }
+
+    .pa-why-aj-btm-2 {
+        padding: 30px 0px 30px;
+    }
+
+    .in-pa-why-aj-btm-2 {
+        padding-top: 30px;
+    }
+
+    .inner-pa-why-aj-btm-2 {
+        padding-inline: 0;
+    }
+
+    .pa-offer {
+        padding: 30px 0;
+    }
+
+    .offer-solution-left-contnt .read-btn {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .ground-transportation-image img {
+        height: 290px;
+    }
+
+    section.exxecutive-fleet {
+        padding: 15px 0 30px;
+    }
+
+    .exxecutive-fleet-heading {
+        padding-right: 20px;
+    }
+
+    .exxecutive-fleet-image img {
+        height: 190px;
+    }
+
+    section.global-fleet {
+        padding: 30px 0;
+    }
+
+    .limo-image img {
+        height: 250px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .ancr-image {
+        width: 26px;
+        height: 26px;
+    }
+
+    .premium-limo-para {
+        width: 85%;
+        padding-top: 30px;
+    }
+
+    section.premium-limo-cards {
+        padding-bottom: 30px;
+    }
+
+    .airport-why-aj-btm {
+        row-gap: 30px;
+    }
+
+    .airport-aj-btm-text {
+        width: 50%;
+    }
+
+    .airport-aj-btm-titles-text {
+        width: 33.33%;
+    }
+
+    .airport-down-para {
+        padding-top: 30px;
+        width: 85%;
+    }
+
+    section.airport-why-aj-2 {
+        padding-bottom: 30px;
+    }
+
+    .limo-cards {
+        width: 33.33%;
+    }
+
+    .pa-why-aj-heading-2 h3 {
+        padding-top: 30px;
+    }
+
+    .airport-why-aj-btmms2 {
+        row-gap: 30px;
+    }
+
+    .airport-why-in-image-2 img {
+        height: 380px;
+    }
+
+    section.hotel-why-aj-2 {
+        padding-bottom: 0px;
+    }
+
+    section.hotel-nearme {
+        padding: 30px 0 30px;
+    }
+
+    .thanx p {
+        padding-top: 0px;
+        width: 90%;
+    }
+
+    .thanx2 p {
+        padding-top: 30px;
+        width: 90%;
+    }
+
+    section.thanx2 {
+        padding: 30px 0 230px;
+    }
+
+    section.events-big {
+        padding: 30px 0;
+        border-bottom: 0;
+
+    }
+
+    section.event-why-aj {
+        padding: 30px 0;
+    }
+
+    .Professional-Chauffeurs-cntnt h3 {
+        padding: 25px 0 25px;
+    }
+
+    .aj-why-left p {
+        padding-top: 25px;
+    }
+
+    .aj-why-right p {
+        padding-top: 25px;
+    }
+
+    .in-hotel-left {
+        padding-top: 30px;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .in-sp-right {
+        width: 46%;
+    }
+
+    .events-big-image img {
+        height: 275px;
+    }
+
+    .private-drivers-heading>p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        opacity: 1 !important;
+        margin-top: 30px;
+    }
+
+    section.corporate-treval-w {
+        padding: 30px 0 0;
+    }
+
+    .corporate-left-w .small-heading {
+        padding-top: 0;
+        width: 164px;
+        margin-right: 0;
+    }
+
+    .about2-in-sec {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about2-image {
+        top: 55%;
+        width: 400px;
+        height: 265px;
+    }
+
+    .about2-image img {
+        width: 400px;
+        height: 265px;
+    }
+
+    section.about2 {
+        padding: 30px 0 265px;
+    }
+
+    .primary-button {
+        font-size: 14px;
+        padding: 16px 32.5px;
+    }
+
+    .about2-in-sec p {
+        margin: 25px 0 25px;
+    }
+
+    section.service2 {
+        padding: 30px 0;
+    }
+
+    .service2 h2 {
+        margin: 0px 0 30px;
+        text-align: center;
+    }
+.aj-home-chicago-services .serv-card {
+        height: 340px;
+    }
+    .serv-card {
+        height: 315px;
+    }
+
+    .inner-inderies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-inderies {
+        width: 100%;
+    }
+
+    .right-inderies {
+        width: 100%;
+        padding: 30px 20px 80px 20px;
+    }
+
+    .inderies-horizontle {
+        padding: 30px 10px 0px 15px;
+    }
+
+    .inderies-horizontle p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .inderies-card {
+        min-height: 415px;
+        height: 415px;
+    }
+
+    .client-tstmnl-heading {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    /* .client-tstmnl-heading .swiper-button-next, .client-tstmnl-heading .swiper-button-prev {
+        bottom: -520%;
+    }
+    .client-tstmnl-heading .swiper-button-next, .client-tstmnl-heading .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 150px);
+        left: auto;
+    }
+    .client-tstmnl-heading .swiper-button-prev, .client-tstmnl-heading .swiper-rtl .swiper-button-next {
+        left: 150px;
+        right: auto;
+    } */
+    .slider-buttons {
+        position: absolute;
+        /* top: auto; */
+        z-index: 1;
+        top: 510px;
+        /* bottom: -380px; */
+        margin: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .client-tstmnl-heading .swiper-button-next,
+    .client-tstmnl-heading .swiper-button-prev {
+        position: unset;
+    }
+
+    section.client-tstmnl {
+        padding: 30px 15px 120px 15px;
+        flex-direction: column;
+    }
+
+    .client-tstmnl-slider {
+        width: 100%;
+    }
+
+    .contact2-send-message-right {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .contact2-send-message-right h2 {
+        color: #0F1F35;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+
+    .input-container input,
+    .input-container textarea,
+    .input-container select {
+        font-size: 0.8rem;
+    }
+
+    select:not(:placeholder-shown)+label {
+        top: -10px;
+        font-family: 'Poppins';
+        font-size: 12px;
+    }
+
+    .input-container label,
+    .input-container select+label {
+        position: absolute;
+        left: 10px;
+    }
+
+    .footer-middle-in {
+        padding: 50px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-bottomm {
+        padding: 14px 0 25px;
+        border-top: 1px solid #ffffff17;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .footer-social-bottom-listtt a {
+        font-size: 14px;
+    }
+
+    .footer-social-bottom-listtt ul {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottomm p {
+        text-align: center;
+    }
+
+    .book-lemo-heading {
+        width: 100%;
+    }
+
+    .offer-solution-heading {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .offer-solution-right-image {
+        width: 100%;
+    }
+
+    .schedule-image img {
+        height: 260px;
+    }
+
+    .philosofy-diff-contnt {
+        flex-direction: column;
+    }
+
+    .philosofy-diff-left {
+        width: 100%;
+    }
+
+    .philosofy-diff-right {
+        width: 100%;
+    }
+
+    section.elevate-jrny {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    section.contact2-send-message {
+        padding: 30px 0 30px;
+    }
+
+    .contact2-send-message .container>h2 {
+        padding-bottom: 30px;
+    }
+
+    section.location-map {
+        padding: 30px 0 0px;
+    }
+
+    .location-name h2 {
+        margin-bottom: 25px;
+    }
+
+    .location-name p {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .location-image {
+        height: 880px;
+    }
+
+    .map-list h2 {
+        width: 100%;
+    }
+
+    section.map-list {
+        padding: 30px 0;
+    }
+
+    .map-in-list {
+        padding-top: 30px;
+    }
+
+    .map-in-list ul {
+        columns: 2;
+    }
+
+    .slider-name1 h1 {
+        font-size: 50px;
+    }
+
+    .slider-name1 span {
+        font-size: 16px;
+    }
+
+    .inderies .container {
+        padding-inline: 0px;
+    }
+
+    .inderies-horizontle-image {
+        margin: 15px 0;
+    }
+
+    .innnr-philosfy-diff h4 {
+        text-align: center;
+    }
+
+    .inner-ground-transportation {
+        flex-direction: column;
+    }
+
+    .ground-transportation-contnt {
+        width: 100%;
+    }
+
+    .ground-transportation-image {
+        width: 100%;
+    }
+
+    .inner-roadshow {
+        flex-direction: column-reverse;
+    }
+
+    .roadshow-contnt {
+        width: 100%;
+    }
+
+    .roadshow-image {
+        width: 100%;
+    }
+
+    .sp-occasion-heading {
+        width: 100%;
+    }
+
+    .special-occasion-image {
+        width: 100%;
+    }
+
+    .inner-special-occasion2 {
+        flex-direction: column-reverse;
+    }
+
+    .left-special-occasion2 {
+        width: 100%;
+    }
+
+    .rightt-special-occasion2 {
+        width: 100%;
+        text-align: -webkit-right;
+        position: relative;
+        height: 415px;
+    }
+
+    section.special-occasion-2 {
+        background: #F4F7F9;
+        padding: 30px 0;
+    }
+
+    .left-special-occasion2 {
+        width: 100%;
+        height: 470px;
+    }
+
+    .road-show .airport-image {
+        width: 500px;
+        top: 30%;
+    }
+
+    .road-show .pickup-airport {
+        padding-top: 300px;
+    }
+
+    .roadshowq-image {
+        width: 100%;
+    }
+
+    .phil-left h4 {
+        padding: 24px 0 24px;
+    }
+
+    .inner-Professional-Chauffeurs2 {
+        flex-direction: column;
+    }
+
+    .Professional-Chauffeurs-left2 {
+        width: 100%;
+    }
+
+    .Professional-Chauffeurs-right {
+        width: 100%;
+    }
+
+    section.pd-expensive {
+        padding: 30px 0;
+        background: #F4F7F9;
+        margin-bottom: 30px;
+    }
+section.pd-expensive.good-personal-main {
+    padding: 0;
+    margin-bottom: 0;
+	background:transparent;
+}
+    .pa-why-aj-cntnt {
+        width: 48%;
+    }
+
+    .ts-bussiness-image {
+        width: 100%;
+    }
+
+    .ts-bussiness-image img {
+        height: 545px;
+    }
+
+    .inner-special-occasion3 {
+        flex-direction: column;
+    }
+
+    .pa-fleet-contnt {
+        width: 100%;
+    }
+
+    .en-responsibe-image {
+        width: 100%;
+    }
+
+    .en-responsibe {
+        flex-direction: column-reverse;
+    }
+
+    .inner-special-occasion3 .in-sp-left .sp-left h4,
+    .inner-special-occasion3 .in-sp-right .sp-right h4 {
+        margin: 24px 0 24px;
+    }
+
+    .pa-fleet-contnt p {
+        padding: 24px 0px 0 0;
+    }
+
+    section.LIMOUSINE-service {
+        padding: 30px 0;
+    }
+
+    .LIMOUSINE-service-image {
+        width: 100%;
+    }
+
+    section.airport-why-aj-2 {
+        padding-bottom: 0px;
+    }
+
+    section.airport-why-aj-2 {
+        background: #F4F7F9;
+        padding: 30px 0;
+    }
+
+    .pa-why-aj-heading-2 {
+        width: 100%;
+    }
+
+    .pa-why-aj-image-2 {
+        width: 100%;
+    }
+
+    .pa-why-aj-tp-2 {
+        flex-direction: column;
+    }
+
+    .pa-why-aj-heading-2 h3 {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+
+    .Professional-Chauffeurs-left {
+        width: 100%;
+    }
+
+    .inner-Professional-Chauffeurs {
+        flex-direction: column;
+    }
+
+    .Professional-image1 img {
+        height: 465px;
+    }
+
+    .airport-why-aj-image-2 {
+        width: 100%;
+    }
+
+    .shuttle-service .pa-why-aj-heading-2 p {
+        margin-top: 0px;
+    }
+
+    section.shuttle-service {
+        padding: 30px 0;
+    }
+
+    section.hotel-limo-service {
+        padding: 30px 0;
+    }
+
+    .pickup-hotel {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .hotel-image {
+        width: 100%;
+    }
+
+    .hotel-why-aj-heading-2 {
+        width: 100%;
+    }
+
+    .hotel-why-aj-image-2 {
+        width: 100%;
+    }
+
+    .hotel-why-aj-heading-2 p {
+        margin-top: 24px;
+    }
+
+    section.vedioss {
+        margin-bottom: 30px;
+    }
+
+    section.concert-service {
+        padding: 0 0 30px;
+    }
+
+    .in-hotel-right {
+        width: 100%;
+    }
+
+    .innn-hotel-right {
+        padding-left: 0px;
+    }
+
+    .inn-hotel-right {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+
+    .map-in-list li {
+        flex: 0 0 50%;
+    }
+
+    .map-in-list li:nth-child(1)::before,
+    .map-in-list li:nth-child(4)::before,
+    .map-in-list li:nth-child(7)::before,
+    .map-in-list li:nth-child(10)::before,
+    .map-in-list li:nth-child(13)::before,
+    .map-in-list li:nth-child(16)::before,
+    .map-in-list li:nth-child(19)::before,
+    .map-in-list li:nth-child(22)::before,
+    .map-in-list li:nth-child(25)::before,
+    .map-in-list li:nth-child(28)::before,
+    .map-in-list li:nth-child(31)::before,
+    .map-in-list li:nth-child(34)::before {
+        width: 1px;
+    }
+
+    .map-in-list li:nth-child(1)::before,
+    .map-in-list li:nth-child(3)::before,
+    .map-in-list li:nth-child(5)::before,
+    .map-in-list li:nth-child(7)::before,
+    .map-in-list li:nth-child(9)::before,
+    .map-in-list li:nth-child(11)::before,
+    .map-in-list li:nth-child(13)::before,
+    .map-in-list li:nth-child(15)::before,
+    .map-in-list li:nth-child(17)::before,
+    .map-in-list li:nth-child(19)::before,
+    .map-in-list li:nth-child(21)::before,
+    .map-in-list li:nth-child(23)::before,
+    .map-in-list li:nth-child(25)::before,
+    .map-in-list li:nth-child(27)::before,
+    .map-in-list li:nth-child(29)::before,
+    .map-in-list li:nth-child(31)::before,
+    .map-in-list li:nth-child(33)::before,
+    .map-in-list li:nth-child(35)::before,
+    .map-in-list li:nth-child(37)::before,
+    .map-in-list li:nth-child(39)::before,
+    .map-in-list li:nth-child(41)::before,
+    .map-in-list li:nth-child(43)::before,
+    .map-in-list li:nth-child(45)::before,
+    .map-in-list li:nth-child(47)::before,
+    .map-in-list li:nth-child(49)::before,
+    .map-in-list li:nth-child(51)::before,
+    .map-in-list li:nth-child(53)::before,
+    .map-in-list li:nth-child(55)::before,
+    .map-in-list li:nth-child(57)::before,
+    .map-in-list li:nth-child(59)::before,
+    .map-in-list li:nth-child(61)::before,
+    .map-in-list li:nth-child(63)::before {
+        width: 0px;
+    }
+
+    .hotel-why-aj-image-2 {
+        margin-top: 20px;
+    }
+
+    .about2-image-chicago {
+        top: 58%;
+        width: 370px;
+        height: 300px;
+    }
+
+    .about2-image-chicago img {
+        width: 370px;
+        height: 300px;
+    }
+
+    section.chicago-about2 {
+        padding: 30px 0 385px;
+    }
+
+    section.service2-chicago {
+        background: #fff;
+        padding: 30px 0;
+    }
+
+    .in-mapp {
+        margin-top: 0%;
+    }
+
+    .smart-vehicle-image {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    section.smart-vehicle {
+        border-top: 1px solid #0000002b;
+        padding-top: 25px;
+    }
+    .active .inner-header {
+        background-color: #fff;
+        transition: all .4s ease-in-out;
+    }
+    .top-header {
+        padding: 12px 20px 12px 20px;
+    }
+    section.detail-banner {
+        height: 30vh;
+    }
+    section.apply-sec {
+        background: #F4F7F9;
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+    .apply-sec h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .inner-apply-sec button {
+        width: 75%;
+    }
+    .apply-input-container textarea::placeholder {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:767px) {
+    .slider-buttons{
+            top: 470px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .fleet-image img {
+        height: 300px;
+    }
+
+    .select-ride {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+	.ride-inner-content{
+		padding-left: 0;
+	}
+    .select-ride-heading {
+        width: 100%;
+    }
+
+    .select-ride>p {
+        width: 100%;
+    }
+
+    .inner-book-limo3 {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .inner-book-limo2 {
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
+
+    .car-item>h2 {
+        padding-bottom: 30px;
+        padding-left: 2%;
+        background: #F4F7F9;
+    }
+
+    .car-item-image img {
+        height: 270px;
+    }
+
+    .ride-cars .owl-nav {
+        position: absolute;
+        top: unset;
+        right: 0;
+        background: #F4F7F9;
+        width: 50%;
+        bottom: 10px;
+        left: 0;
+        margin: auto;
+    }
+
+    .roadshoww-image {
+        width: 100%;
+    }
+
+    .car-item-bottom {
+        padding-top: 10px;
+    }
+
+    section.ride-cars {
+        padding: 0px 0 0px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .book-now-cardd {
+        width: 280px;
+        height: 155px;
+        top: -17%;
+        right: 3%;
+        padding: 16px 16px;
+    }
+
+    .now-card-avail {
+        padding: 7px 12px;
+        gap: 7px;
+        margin: 5px 0;
+    }
+
+    .book-now-card-text p {
+        padding: 10px 0 15px;
+        font-size: 14px;
+    }
+
+    section.book-limo2 {
+        padding: 30px 0 0;
+    }
+
+    .inner-ground-transportation {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .ground-transportation-contnt {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .Professional-Chauffeurs-left2 {
+        width: 100%;
+    }
+
+    .ground-transportation-image {
+        width: 100%;
+    }
+
+    .inner-roadshow {
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .roadshow-contnt {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .roadshow-image {
+        width: 100%;
+    }
+
+    .special-occasion-contnt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-special-occasion {
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .special-occasion-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sp-occasion-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sp-occasion-heading h2 {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .sp-occasion-image {
+        margin-top: 4%;
+        margin-left: 0;
+        margin-bottom: -23%;
+        width: 164px;
+    }
+
+    .sp-oc-big-image img {
+        height: 300px;
+    }
+
+    .inner-special-occasion2 {
+        flex-direction: column;
+    }
+
+    .in-sp-left {
+        padding-top: 150px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .in-sp-right {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .sp-right-image img {
+        height: 200px;
+    }
+
+    .sp-left-image img {
+        height: 260px;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) .sp-right-image img {
+        height: 250px;
+    }
+
+    .review-item {
+        padding-top: 60px;
+        flex-direction: column;
+    }
+
+    .review-contnt {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .profile-pic {
+        width: 13%;
+    }
+
+    .review-contnt>p {
+        line-height: 30px;
+        padding: 20px 0 15px;
+    }
+
+    .review-image {
+        width: 100%;
+    }
+
+    .ground-review .owl-nav {
+        position: absolute;
+        right: 6%;
+        bottom: -20px;
+    }
+
+    .roadshowq-image {
+        width: 100%;
+    }
+
+    .roadshowq-image img {
+        height: 500px;
+    }
+
+    .offer-solution-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phil-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .private-image img {
+        height: 240px;
+    }
+
+    .inner-special-occasion3 {
+        flex-direction: column;
+    }
+
+    .watch-vedio-vedio iframe {
+        height: 280px;
+    }
+
+    .pa-fleet {
+        padding-top: 30px;
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .pa-fleet-contnt {
+        width: 100%;
+    }
+
+    .pa-fleet-image {
+        width: 100%;
+    }
+
+    .pa-fleet-contnt p {
+        padding: 30px 20px 20px 0;
+    }
+
+    .pa-fleet-image img {
+        height: 290px;
+    }
+
+    .pa-why-aj-tp {
+        flex-direction: column;
+    }
+
+    .pa-why-aj-heading {
+        width: 100%;
+    }
+
+    .pa-why-aj-image {
+        width: 100%;
+    }
+
+    .pa-why-aj-heading p {
+        padding: 30px 25px 20px 0;
+    }
+
+    .pa-why-aj-image p {
+        padding-top: 30px;
+    }
+
+    .pa-why-aj-cntnt {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .pa-why-aj-btm {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .pa-why-aj-tp-2 {
+        flex-direction: column;
+    }
+
+    .shuttle-service .pa-why-aj-tp-2 {
+        flex-direction: column-reverse;
+    }
+
+    .pa-why-aj-heading-2 {
+        width: 100%;
+    }
+
+    .pa-why-aj-heading-2 p {
+        padding-right: 0;
+    }
+
+    .pa-why-aj-image-2 {
+        width: 100%;
+    }
+
+    .pa-why-in-image-2 img {
+        height: 400px;
+    }
+
+    .in-pa-why-aj-btm-2 {
+        flex-direction: column;
+    }
+
+    .pa-why-aj-cntnt-2 {
+        width: 100%;
+    }
+
+    .inner-exxecutive-fleet {
+        flex-direction: column;
+    }
+
+    .exxecutive-fleet-heading {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .exxecutive-fleet-image {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .exxecutive-fleet-image img {
+        height: 250px;
+    }
+
+    .limo-cards {
+        width: 50%;
+    }
+
+    .premium-limo-para {
+        width: 100%;
+    }
+
+    .airport-aj-btm-text {
+        width: 100%;
+    }
+
+    .airport-why-aj-btm {
+        row-gap: 2px;
+    }
+
+    .airport-why-aj-image-2 {
+        width: 100%;
+    }
+
+    .airport-aj-btm-titles-text {
+        width: 50%;
+    }
+
+    .premium-limo2-image {
+        width: 100%;
+    }
+
+    .premium-limo2-image img {
+        height: 650px;
+    }
+
+    footer#footer {
+        padding-inline: 35px;
+    }
+
+    .events-big-para {
+        column-count: 1;
+    }
+
+    .events-big-para p {
+        padding-top: 25px;
+    }
+
+    .events-big-image img {
+        height: 200px;
+    }
+
+    .event-transport-heading {
+        width: 100%;
+    }
+
+    .in-hotel-left {
+        padding-top: 30px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .inner-Professional-Chauffeurs {
+        flex-direction: column-reverse;
+    }
+
+    .Professional-Chauffeurs-left {
+        width: 100%;
+    }
+
+    .Professional-Chauffeurs-right {
+        width: 100%;
+    }
+
+    .EVENT-Professional-image1 img {
+        height: 350px;
+    }
+
+    .inner-special-occasion3 .in-sp-left {
+        padding-top: 70px;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .about2-image {
+        top: 60%;
+    }
+ .aj-home-chicago-services .serv-card {
+     height: 275px;
+        width: 100%;
+    }
+    .serv-card {
+        height: 275px;
+        width: 100%;
+    }
+
+    .inderies-horizontle p {
+        width: 280px;
+        font-size: 14px;
+    }
+
+    .schedule-bottom {
+        flex-direction: column;
+    }
+
+    .schedule-image {
+        width: 100%;
+    }
+
+    .schedule-cntnt {
+        width: 100%;
+    }
+
+    .schedule-image img {
+        height: 350px;
+    }
+
+    .elevate-jrny-image {
+        width: 100%;
+    }
+
+    .road-show .airport-image {
+        width: 400px;
+        top: 29%;
+    }
+
+    .road-show .airport-image img {
+        height: 228px;
+    }
+
+    .road-show .pickup-airport {
+        padding-top: 255px;
+    }
+
+    .inner-concert-service {
+        flex-direction: column;
+    }
+
+    .concert-service-heading {
+        width: 100%;
+    }
+
+    .concert-service-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .in-hotel-right-image {
+        margin-top: 20px;
+    }
+
+    .about2-image-chicago {
+        top: 62%;
+    }
+
+    .blog-card {
+        width: 100%;
+        padding-inline: 0px;
+    }
+
+    .inner-blog-sec {
+        margin-inline: 0px;
+        row-gap: 30px;
+        align-items: stretch;
+    }
+    .slider-buttons {
+    top: 520px;
+}
+    .car-page-tamplate-inner-wrap p img{
+        height: 220px;
+    }
+    .car-page-tamplate-inner-wrap{
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    header#header {
+        border-bottom: 0;
+    }
+
+/*     .inner-header .all-btn {
+        display: none;
+    } */
+
+    .top-header {
+        padding: 12px 12px 12px 12px;
+    }
+
+    .mainn-banner h1 {
+        top: 3%;
+    }
+
+    section.mainn-banner {
+        height: 42vh;
+        background-position: center;
+		padding-top:50px;
+    }
+
+    .slider-name {
+        padding-top: 100px;
+        text-align: center;
+        padding-left: 0;
+        color: #fff;
+    }
+
+    .blog-detail-profile-image-box {
+        display: flex;
+        align-items: normal;
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .slider-image {
+        display: none;
+    }
+
+    .slider-bg {
+        background-position: right;
+    }
+
+    .roadshoww-image img {
+        height: 450px;
+    }
+
+    .book-lemo-content {
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .book-lemo-content h2 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .book-lemo-para {
+        width: 100%;
+    }
+
+    .book-lemo-para p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .pickup-airport {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .pickup-airport-contnt {
+        width: 100%;
+    }
+
+    .pickup-airport-contnt h4 {
+        padding-bottom: 16px;
+        font-size: 20px;
+        padding-top: 12px;
+    }
+
+    section.book-lemo {
+        padding: 45px 15px;
+    }
+
+    section.feature-services {
+        padding: 45px 0 190px;
+    }
+
+    .feature-services .small-heading {
+        font-size: 14px;
+    }
+
+    .feature-services h2 {
+        font-size: 28px;
+    }
+
+    .inner-feature-services {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .in-f-service1 {
+        width: 100%;
+        padding-top: 40px;
+        order: 1;
+    }
+
+    .f-service-contnt h4 {
+        position: relative;
+        padding-left: 40px;
+        font-size: 20px;
+    }
+
+    .in-f-service1 .f-service-contnt:last-child,
+    .in-f-service3 .f-service-contnt:last-child {
+        padding-top: 40px;
+        padding-left: 0;
+    }
+
+    .Professional-Chauffeurs2 .Professional-image2 {
+        bottom: 0px;
+        left: 0%;
+    }
+
+    .in-f-service2 {
+        width: 100%;
+        order: 3;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .in-f-service3 {
+        width: 100%;
+        padding-top: 40px;
+        order: 2;
+    }
+
+    .fs-image1 img {
+        width: 100%;
+        object-fit: cover;
+        height: 347px;
+    }
+
+    .fs-image2 img {
+        height: 245px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .fs-image2 {
+        width: 45%;
+        position: absolute;
+        right: 0;
+        bottom: -2%;
+    }
+
+    .fs-image1 {
+        width: 66%;
+    }
+
+    .feature-services-image {
+        position: relative;
+        height: 435px;
+        margin-top: 60px;
+    }
+
+    .corporate-travel-contnt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .corporate-left-image img {
+        height: 238px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .corporate-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corporate-left .small-heading {
+        padding-top: 0;
+        width: auto;
+        margin-right: 48px;
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+
+    .corporate-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .corporate-left-image {
+        margin-left: 0%;
+        width: 40%;
+        margin-bottom: 20px;
+        margin-top: -55%;
+    }
+
+    .corporate-right {
+        width: 100%;
+        padding-top: 33px;
+    }
+
+    .corporate-right-image {
+        width: 100%;
+    }
+
+    .corporate-right h4 {
+        padding: 20px 0 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    section.corporate-treval {
+        padding: 0px 0 30px;
+    }
+
+    .inner-offer-solution {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .offer-solution-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offer-solution-left {
+        width: 100%;
+    }
+
+    section.offers-solution {
+        background: #F4F7F9;
+        padding-bottom: 30px;
+    }
+
+    .offer-solution-left-contnt {
+        margin-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .offer-solution-heading span.small-heading {
+        width: 375px;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .offer-solution-left-contnt h4 {
+        padding: 20px 0 20px;
+    }
+
+    .offer-solution-right {
+        width: 100%;
+    }
+
+    .offer-solution-right-contnt {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .offer-solution-right-contnt2 h4,
+    .offer-solution-right-contnt h4 {
+        padding: 20px 0 20px;
+    }
+
+    .offer-solution-right-contnt2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section.Industries-services {
+        background: linear-gradient(180deg, #0E1F35 0%, #1C3352 100%);
+        padding: 45px 0;
+        color: #fff;
+    }
+
+    section.book-ride {
+        padding: 0px 0 100px;
+    }
+
+    .inner-book-ride {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-ride-contnt {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .inner-book-ride span.small-heading {
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .book-ride-slider {
+        padding-top: 40px;
+    }
+
+    .item-image img {
+        height: 350px;
+    }
+
+    .availability {
+        padding: 16px;
+        flex-direction: column;
+    }
+
+    .availability-card img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .item-namee h3 {
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+
+    .item-bottom {
+        padding: 20px 0;
+    }
+
+    .read-btn a {
+        font-size: 14px;
+    }
+
+    .book-ride .owl-theme .owl-nav {
+        margin-top: 0;
+        position: absolute;
+        top: unset;
+        right: 0;
+        bottom: -80px;
+        left: 0;
+    }
+
+    .schedule-top {
+        flex-direction: column;
+    }
+
+    .schedule-top h2 {
+        padding-left: 0;
+        width: 100%;
+        padding: 5px 0 20px;
+    }
+
+    section.schedule {
+        background: #F4F7F9;
+    }
+
+    .schedule-bottom {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .schedule-image {
+        width: 100%;
+    }
+
+    .schedule-cntnt {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .schedule-cntnt h3 {
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .schedule-cntnt .read-btn {
+        margin-top: 20px;
+    }
+
+    .upcoming-top {
+        justify-content: center;
+        padding-inline: 0;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .upcoming-top h4 {
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .upcoming-top span {
+        width: 20%;
+        margin: 24px 0;
+    }
+
+    .upcoming-top p {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .business-item {
+        display: flex;
+        padding-top: 115px;
+        justify-content: end;
+        flex-direction: column;
+    }
+
+    .upcoming-business .owl-nav {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        justify-content: center;
+    }
+
+    .business-image {
+        width: 100%;
+    }
+
+    .business-image img {
+        height: 455px;
+    }
+
+    .business-contnt {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .business-list {
+        padding-top: 32px;
+    }
+
+    .in-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .list-text {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    section.upcoming-business {
+        padding: 40px 0 40px;
+    }
+
+    .travel-cntnt {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .travel-cntnt h2 {
+        margin-left: 0;
+        width: 100%;
+        padding: 30px 0 45px;
+    }
+
+    .inner-travel {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .travel-image {
+        width: 100%;
+    }
+
+    .travel-image-cntnt {
+        width: 100%;
+    }
+
+    section.Travel-Vehicle {
+        padding: 50px 0;
+    }
+
+    .travel-cntnt span.small-heading {
+        padding-top: 0;
+    }
+
+    .travel-image-cntnt p {
+        padding: 30px 0 24px;
+    }
+
+    .review .container {
+        padding-inline: 15px;
+    }
+
+    .review-item {
+        display: flex;
+        padding-top: 55px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .profile-text-image {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        /* flex-direction: column; */
+    }
+
+    .profile-pic {
+        width: 19%;
+    }
+
+    .profile-pic img {
+        object-fit: cover;
+        /* width: 100%; */
+        /* max-height: 100%; */
+        width: 60px !important;
+        height: 60px;
+    }
+
+    .review-image {
+        width: 100%;
+    }
+
+    .review-contnt {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .profile-title {
+        width: 100%;
+    }
+
+    .review-contnt>p {
+        padding: 20px 0 32px;
+    }
+
+    .profile-title h4 {
+        padding-bottom: 5px;
+    }
+
+    .review-image img {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .review-star {
+        width: 32%;
+        padding-bottom: 48px;
+    }
+
+    .review .owl-nav {
+        position: absolute;
+        right: 0;
+        bottom: -9%;
+        left: 0;
+    }
+
+    section.review {
+        background: #F4F7F9;
+        padding: 40px 0 215px;
+    }
+
+    .video-player {
+        width: 100%;
+        height: 280px;
+        position: relative;
+    }
+
+    .life_time_video_hover button {
+        cursor: pointer;
+        width: 78px;
+        height: 78px;
+    }
+
+    .life_time_video_hover button img {
+        width: 78px;
+        height: 78px;
+    }
+
+    section.vedio {
+        padding-bottom: 50px;
+    }
+
+    .footer-top h2 {
+        font-size: 40px;
+        line-height: 56px;
+        width: 80%;
+    }
+
+    .footer-top {
+        display: flex;
+        align-items: start;
+        padding: 40px 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer#footer {
+        padding-inline: 15px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .newsletter-form form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter-grp {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .newsletter-form button {
+        padding: 13px 75px;
+    }
+
+    .footer-logo-sec {
+        width: 100%;
+    }
+
+    .newsletter-grp input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footer-social-sec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .quick-link {
+        width: 100%;
+    }
+
+    .get-in-touch {
+        width: 100%;
+    }
+
+    .social-icons {
+        width: 100%;
+    }
+
+    .footer-middle {
+        padding: 40px 7px 40px;
+    }
+
+    .quick-link h5,
+    .get-in-touch h5,
+    .social-icons h5 {
+        padding-bottom: 18px;
+        padding-top: 18px;
+    }
+
+    .quick-link li {
+        padding-bottom: 18px;
+    }
+
+    .footer-social-bottom-list ul {
+        display: flex;
+        gap: 50px;
+        padding-inline: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .footer-social-bottom-list {
+        padding-top: 35px;
+    }
+
+    .quick-link a,
+    .get-in-touch a {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        padding: 16px;
+    }
+
+    .blog-main-cntnt h2 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .blog-card {
+        width: 100%;
+        padding-inline: 0px;
+    }
+
+    .blog-detail h2 {
+        font-size: 28px;
+        line-height: 150%;
+    }
+
+    section.blog-detail .container {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .continue-reading h2 {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+
+    /* .blog-detail span.bloge-date {
+        padding: 20px 0;
+    } */
+
+    .bloge-image img {
+        height: 165px;
+    }
+
+    .corporate-right-image img {
+        height: 230px;
+    }
+
+    .offer-solution-left-image img {
+        height: 350px;
+    }
+
+    .offer-solution-right-image img {
+        height: 225px;
+    }
+
+    .offer-solution-right-image2 img {
+        height: 270px;
+    }
+
+    section.thanx {
+        padding: 0px 0 30px;
+    }
+
+    .thanx h2 {
+        width: 100%;
+    }
+
+    .founder-image img {
+        height: 380px;
+    }
+
+    .philosofy-diff-contnt {
+        flex-direction: column;
+    }
+
+    .philosofy-diff-left {
+        width: 100%;
+    }
+
+    .philosofy-diff-right {
+        width: 100%;
+    }
+
+    .fleet-image img {
+        height: 280px;
+    }
+
+    .inner-Professional-Chauffeurs {
+        flex-direction: column;
+    }
+
+    .Professional-Chauffeurs-left {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .Professional-image1 {
+        width: 65%;
+    }
+
+    .Professional-Chauffeurs-right {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .Professional-image2 {
+        bottom: 0%;
+        left: 10%;
+    }
+
+    .commtment-sec {
+        width: 100%;
+    }
+
+    .car-item-image img {
+        height: 195px;
+    }
+
+    .book-now-cardd {
+        width: 235px;
+        height: 125px;
+        top: -10%;
+        right: 3%;
+        padding: 12px 12px;
+    }
+
+    .ground-review .owl-nav {
+        position: absolute;
+        right: 6%;
+        bottom: 47%;
+    }
+
+    .in-sp-left {
+        padding-top: 120px;
+    }
+
+    .mainn-banner h1 {
+        text-align: center;
+    }
+
+    .message-card {
+        width: 100%;
+    }
+
+    .card-grp {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .in-map iframe {
+        height: 300px;
+        width: 100%;
+    }
+
+    section.mapp {
+        padding-bottom: 30px;
+    }
+
+    .in-map {
+        margin-top: -25%;
+    }
+
+    .send-message-right h2 {
+        font-size: 28px;
+    }
+
+    .road-show-heading {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .thanx p {
+        padding-top: 0px;
+        width: 95%;
+    }
+
+    .premium-limo2-image img {
+        height: 510px;
+    }
+
+    .airport-why-in-image-2 img {
+        height: 355px;
+    }
+
+    .thanx2 p {
+        padding-top: 20px;
+        width: 95%;
+    }
+
+    section.thanx2 {
+        padding: 30px 0 150px;
+    }
+
+    .thanx2 h2 {
+        width: 100%;
+    }
+
+    .small-heading {
+        font-size: 14px;
+    }
+
+    .blog-bottom p.blog-para {
+        font-size: 14px;
+        opacity: 0.6;
+    }
+
+    .blog-image img {
+        height: 287px;
+        /* border: 14px solid #F2F2F2; */
+    }
+    .blog-image {
+        border: 14px solid #F2F2F2;
+        height: 302px;
+    }
+    .blog-detail span.bloge-date {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .inner-detail-blogs .blog-bottom h4.blog-title {
+        font-size: 20px;
+    }
+
+    .inner-detail-blogs .blog-image img {
+        border: 14px solid #F2F2F2;
+    }
+
+    .ancr-image {
+        width: 22px;
+        height: 22px;
+    }
+
+    .philosofy-diff-text {
+        padding-bottom: 12px;
+    }
+
+    .fleet-name h4 {
+        padding: 20px 0 20px;
+    }
+
+    .philosofy-diff-text h2 {
+        padding-bottom: 20px;
+    }
+
+    .book-ride-contnt h2 {
+        padding-bottom: 20px;
+    }
+
+    .Professional-Chauffeurs-left h2 {
+        padding-bottom: 20px;
+    }
+
+    .Professional-Chauffeurs-cntnt h3 {
+        padding: 20px 0 20px;
+    }
+
+    .commitment-card h4 {
+        padding-bottom: 20px;
+    }
+
+    .fleeet-contnt p {
+        padding: 20px 0 20px;
+    }
+
+    .select-ride-heading h2 {
+        padding-bottom: 20px;
+    }
+
+    .book-now-card-text p {
+        padding: 3px 0 8px;
+        font-size: 14px;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    .ground-transportation-contnt h4 {
+        font-size: 16px;
+    }
+
+    .roadshow-image img {
+        height: 315px;
+    }
+
+    .sp-right p {
+        padding-top: 20px;
+    }
+
+    .sp-right h4 {
+        padding-top: 0px;
+    }
+
+    .inner-special-occasion3 .in-sp-left .sp-left h4,
+    .inner-special-occasion3 .in-sp-right .sp-right h4 {
+        margin: 24px 0 0px;
+    }
+
+    .pickup-airport-contnt p {
+        font-weight: 400;
+        padding-top: 20px;
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    .inner-roadshow {
+        align-items: end;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .roadshowq-image img {
+        height: 380px;
+    }
+
+    .corporate-top {
+        padding-top: 20px;
+    }
+
+    .aj-why-left p {
+        padding-top: 20px;
+    }
+
+    .ground-review span.small-heading {
+        padding-bottom: 5px;
+    }
+
+    .watch-vedio-heading h2 {
+        padding-bottom: 20px;
+    }
+
+    .inner-Professional-Chauffeurs2 {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .Professional-Chauffeurs-left2 {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .Professional-Chauffeurs-left2 h2 {
+        padding-bottom: 20px;
+    }
+
+    .pa-fleet-contnt p {
+        padding: 20px 20px 20px 0;
+    }
+
+    .pa-why-aj-heading p {
+        padding: 20px 20px 20px 0;
+    }
+
+
+
+    .pa-why-aj-cntnt h3 {
+        padding-bottom: 20px;
+    }
+
+    .pa-why-aj-cntnt {
+        padding-top: 20px;
+    }
+
+    .pa-why-aj-heading-2 p {
+        padding-top: 20px;
+    }
+
+    .pa-why-aj-tp-2 span.small-heading {
+        padding-top: 0px;
+    }
+
+    .pa-why-aj-heading-2 {
+        padding-bottom: 20px;
+    }
+
+    .in-pa-why-aj-btm-2 {
+        padding-top: 20px;
+    }
+
+    .pa-why-aj-cntnt-2 p {
+        padding-bottom: 20px;
+    }
+
+    .pa-why-aj-cntnt-2 h3 {
+        padding-bottom: 20px;
+    }
+
+    .pa-offer .offer-solution-right-contnt p,
+    .pa-offer .offer-solution-right-contnt2 p,
+    .pa-offer .offer-solution-left-contnt p {
+        padding-top: 20px;
+    }
+
+    .exxecutive-fleet-heading h2 {
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+
+    .inner-special-occasion3 {
+        flex-direction: column;
+    }
+
+    .inner-special-occasion3 .in-sp-left {
+        padding-top: 0px;
+    }
+
+    .sp-left h4 {
+        padding: 0px 0 0px;
+    }
+
+    .sp-left p {
+        padding-top: 20px;
+    }
+
+    .in-sp-right .sp-right:nth-child(2) {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .profile-title p {
+        font-size: 12px;
+    }
+
+    .mainn-banner h1 {
+        width: 95%;
+    }
+
+    .private-drivers-heading>p {
+        margin-top: 20px;
+    }
+
+    .private-drivers-heading .read-btn {
+        margin-top: 20px;
+    }
+
+    .roadshow-contnt {
+        padding-bottom: 20px;
+    }
+
+    .inner-premium-limo-cards {
+        row-gap: 10px;
+    }
+
+    .premium-limo-para {
+        padding-top: 20px;
+    }
+
+    .pa-why-aj-heading-2 h3 {
+        padding-top: 20px;
+    }
+
+    .airport-aj-btm-text h3 {
+        padding-bottom: 16px;
+        font-size: 20px;
+    }
+
+    .airport-aj-btm-titles-text h5 {
+        font-size: 16px;
+    }
+
+    .airport-aj-btm-titles-text h5::before {
+        top: 5px;
+        margin: 0;
+        width: 10px;
+        height: 10px;
+
+    }
+
+    .airport-why-aj-btmms2 {
+        row-gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .airport-down-para {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .pa-why-aj-heading-2 h3 {
+        font-size: 20px;
+    }
+
+    /* .airport-why-aj-btmms2 .airport-aj-btm-titles-text:last-child{
+        margin-top: -30px;
+    } */
+    .road-show .pickup-airport {
+        padding-top: 210px;
+    }
+
+    .airport-aj-btm-titles-text {
+        width: 100%;
+    }
+
+    .pa-why-aj-tp-2 {
+        padding: 15px 0 0;
+    }
+
+    section.why-roadshow {
+        padding: 15px 0 15px;
+    }
+
+    .airport-why-in-image-2 {
+        padding-bottom: 20px;
+    }
+
+    section.hotel-why-aj-2 {
+        padding-bottom: 15px;
+    }
+
+    .events-big-para p {
+        padding-top: 20px;
+    }
+
+    .pickup-airport-contnt .read-btn {
+        margin-top: 20px;
+    }
+
+    .in-hotel-left {
+        padding-top: 0px;
+    }
+
+    .aj-why-right-image img {
+        height: 250px;
+    }
+
+    .send-message .container>h2 {
+        font-size: 20px;
+    }
+
+    .inner-send-message {
+        flex-direction: column-reverse;
+    }
+
+    .send-message-right {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .corporate-left-w {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .corporate-right-w h4 {
+        padding: 20px 0 20px;
+    }
+
+    .corporate-right-image-w img {
+        height: 250px;
+    }
+
+    .corporate-left-image-w {
+        margin-left: 0;
+        width: 164px;
+        margin-bottom: -35%;
+    }
+
+    .slider-name1 {
+        padding-top: 100px;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .slider-frame {
+        top: 200px;
+        width: 365px;
+        height: 725px;
+        right: 0;
+        left: 0;
+        /* margin: auto; */
+    }
+
+    /* .banner-swiper {
+        height: 130vh;
+    } */
+
+    .about2-image {
+        width: 334px;
+        height: 230px;
+    }
+
+    .about2-image {
+        top: 67%;
+        width: 305px;
+        height: 205px;
+    }
+
+    .primary-button {
+        font-size: 14px;
+        padding: 12px 24.5px;
+    }
+
+    .in-serv h4 {
+        margin-top: 12px;
+        /* font-size: 20px; */
+    }
+
+    .in-serv p {
+        margin: 12px 0 20px;
+    }
+.aj-home-chicago-services .serv-card {
+        height: 275px;
+        height: auto;
+    }
+    .serv-card {
+        height: 275px;
+        height: auto;
+    }
+
+    .readd-btn {
+        position: unset;
+    }
+
+    .about2-in-sec p {
+        margin: 25px 0 25px;
+        font-size: 14px;
+    }
+
+    .inderies-horizontle p {
+        width: 235px;
+        font-size: 12px;
+    }
+
+    .inderies-verticle {
+        padding-right: 7px;
+    }
+
+    .inderies-verticle h4 {
+        font-size: 16px;
+    }
+
+    .inderies-horizontle h2 {
+        color: #fff;
+        font-size: 24px;
+        width: 260px;
+    }
+
+    .inderies-horizontle p {
+        color: #fff;
+        line-height: 20px;
+    }
+
+    .inderies-horizontle {
+        padding: 30px 10px 0px 10px;
+    }
+
+    .right-inderies h2 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .inner-client-tstmnl .review-star {
+        width: 32%;
+        padding-bottom: 10px;
+    }
+
+    .contact2-send-message-right h2 {
+        color: #0F1F35;
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+
+    .philosofy-diff-image img {
+        height: 245px;
+    }
+
+    .elevate-jrny-image img {
+        height: 230px;
+    }
+
+    .contact2-send-message .container>h2 {
+        width: 100%;
+    }
+
+    .map-in-list ul {
+        columns: 1;
+    }
+
+    .location-image {
+        height: 680px;
+    }
+
+    .about2-image img {
+        width: 305px;
+        height: 205px;
+    }
+
+    .slider-name1 h1 {
+        font-size: 40px;
+    }
+
+    .slider-name1 span {
+        font-size: 16px;
+    }
+
+    .slider-buttons {
+        top: 550px;
+    }
+
+    .footer-middle-in {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .footer-social-bottom-listtt ul {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottomm p {
+        color: #FFF;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        opacity: 0.7;
+    }
+
+    .footer-bottomm a {
+        font-size: 12px;
+    }
+
+    .inderies-card {
+        min-height: 370px;
+        height: 370px;
+    }
+
+    .menusflex {
+        top: 125px;
+    }
+
+    .navbar>span {
+        top: 125px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .innnr-philosfy-diff h4 {
+        font-size: 18px;
+    }
+
+    .sp-occasion-heading p {
+        margin-top: 16px;
+    }
+
+    .left-special-occasion2 {
+        width: 100%;
+        height: 620px;
+    }
+
+    .road-show .airport-image {
+        width: 350px;
+        top: 26%;
+    }
+
+    .road-show .airport-image img {
+        height: 195px;
+    }
+
+    .corporate-right img {
+        height: 330px;
+    }
+
+    .ts-bussiness-image img {
+        height: 340px;
+    }
+
+    .spp-right-image img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .en-responsibe-image img {
+        height: 325px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .LIMOUSINE-service-image img {
+        height: 420px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .Professional-image1 img {
+        height: 290px;
+    }
+
+    .Professional-Chauffeurs-right {
+        height: 475px;
+    }
+
+    .Professional-image2 img {
+        height: 215px;
+    }
+
+    .shuttle-service .pa-why-aj-2 {
+        padding-top: 30px;
+    }
+
+    select#Client-Type {
+        background-size: 15px 15px;
+    }
+
+    .map-in-list li:nth-child(1)::before,
+    .map-in-list li:nth-child(2)::before,
+    .map-in-list li:nth-child(3)::before,
+    .map-in-list li:nth-child(4)::before,
+    .map-in-list li:nth-child(5)::before,
+    .map-in-list li:nth-child(6)::before,
+    .map-in-list li:nth-child(7)::before,
+    .map-in-list li:nth-child(8)::before,
+    .map-in-list li:nth-child(9)::before,
+    .map-in-list li:nth-child(10)::before,
+    .map-in-list li:nth-child(11)::before,
+    .map-in-list li:nth-child(12)::before,
+    .map-in-list li:nth-child(13)::before,
+    .map-in-list li:nth-child(14)::before,
+    .map-in-list li:nth-child(15)::before,
+    .map-in-list li:nth-child(16)::before,
+    .map-in-list li:nth-child(17)::before,
+    .map-in-list li:nth-child(18)::before,
+    .map-in-list li:nth-child(19)::before,
+    .map-in-list li:nth-child(20)::before,
+    .map-in-list li:nth-child(21)::before,
+    .map-in-list li:nth-child(22)::before,
+    .map-in-list li:nth-child(23)::before,
+    .map-in-list li:nth-child(24)::before,
+    .map-in-list li:nth-child(25)::before,
+    .map-in-list li:nth-child(26)::before,
+    .map-in-list li:nth-child(27)::before,
+    .map-in-list li:nth-child(28)::before,
+    .map-in-list li:nth-child(29)::before,
+    .map-in-list li:nth-child(30)::before,
+    .map-in-list li:nth-child(31)::before,
+    .map-in-list li:nth-child(32)::before,
+    .map-in-list li:nth-child(33)::before,
+    .map-in-list li:nth-child(34)::before,
+    .map-in-list li:nth-child(35)::before,
+    .map-in-list li:nth-child(36)::before,
+    .map-in-list li:nth-child(37)::before,
+    .map-in-list li:nth-child(38)::before,
+    .map-in-list li:nth-child(39)::before,
+    .map-in-list li:nth-child(40)::before,
+    .map-in-list li:nth-child(41)::before,
+    .map-in-list li:nth-child(42)::before,
+    .map-in-list li:nth-child(43)::before,
+    .map-in-list li:nth-child(44)::before,
+    .map-in-list li:nth-child(45)::before,
+    .map-in-list li:nth-child(46)::before,
+    .map-in-list li:nth-child(47)::before,
+    .map-in-list li:nth-child(48)::before,
+    .map-in-list li:nth-child(49)::before,
+    .map-in-list li:nth-child(50)::before,
+    .map-in-list li:nth-child(51)::before,
+    .map-in-list li:nth-child(52)::before,
+    .map-in-list li:nth-child(53)::before,
+    .map-in-list li:nth-child(54)::before,
+    .map-in-list li:nth-child(55)::before,
+    .map-in-list li:nth-child(56)::before,
+    .map-in-list li:nth-child(57)::before,
+    .map-in-list li:nth-child(58)::before,
+    .map-in-list li:nth-child(59)::before,
+    .map-in-list li:nth-child(60)::before,
+    .map-in-list li:nth-child(61)::before,
+    .map-in-list li:nth-child(62)::before {
+        width: 0px;
+    }
+
+    .map-in-list li {
+        flex: 0 0 100%;
+        text-align: left;
+    }
+
+    .active .inner-header {
+        background-color: #fff;
+        transition: all .4s ease-in-out;
+    }
+
+    .active .logo-invert .after-logo {
+        visibility: visible;
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .active .logo-invert .default-logo {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .logo-invert .after-logo {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .logo-invert .default-logo {
+        visibility: visible;
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .private-drivers-image h4 {
+        font-size: 16px;
+    }
+
+    .smart-vehicle-image img {
+        height: 190px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .detail-banner h1 {
+        top: 3%;
+    }
+    section.detail-banner {
+        height: 33vh;
+        background-position: center;
+    }
+    .apply-sec .container {
+        padding-inline: 15px;
+    }
+    .apply-input-grp2 .apply-input-container {
+        flex: 1 0 225px;
+    }
+    .apply-input-container input, .apply-input-container textarea {
+        padding: 15px;
+    }
+    .apply-input-container {
+        /* background: white; */
+        /* padding: 16px; */
+        margin-bottom: 20px;
+    }
+    .apply-input-container label, .apply-input-container select+label {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+	.pa-why-aj-tp-2 {
+    padding: 0;
+    margin: 0;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+    section.client-tstmnl {
+    padding: 30px 15px 150px 15px;
+}
+.slider-buttons {
+    top: 610px;
+}
+}
+
+
+@media screen and (max-width: 380px) {
+    .inderies-horizontle p {
+        width: 210px;
+        font-size: 12px;
+    }
+
+    .banner-swiper {
+        height: 160vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    .slider-frame {
+        top: 240px;
+        width: 600px;
+        height: 720px;
+        right: 50px;
+        margin: auto;
+        position: unset;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    .slider-name1 {
+        padding-top: 200px;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .slider-bg {
+        flex-direction: column;
+    }
+    .banner-swiper {
+        height: 97vh;
+    }
+    section.chicago-about2 {
+        padding: 60px 0;
+    }
+	.navbar>div>ul,
+    .navbar>ul {
+        width: 90%;
+    }
+    .top-header {
+        background: #1C3352;
+        padding: 12px 20px 12px 20px;
+    }
+  }
+
+
+
+
+
+  
+  
+  
+  .ti-controls-line {
+    opacity: 0;
+    }
+  li#menu-item-1272 {
+    display: none !important;
+}
+.page-template-north-america li#menu-item-1272{
+    display:block !important;
+}
+.page-template-north-america #menu-header-menu {
+    width: 63%;
+}
+.page-id-1289 section.service2{
+	display: none;
+}
+.page-id-1289 section.inderies{
+	display: none;
+}
+.page-id-1289 section.client-tstmnl{
+	display: none;
+}
+.background-image-slider .swiper-pagination-bullet-active{
+	background: #fff !important;
+}
+.background-image-slider .swiper-pagination-bullet{
+ 	       background: #000;
+    border: 1px solid #fff !important;
+}
+
+
+
+.page-id-1289 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1289 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+.page-id-1316 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1316 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+.page-id-1319 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1319 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+.page-id-1322 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1322 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+.page-id-1327 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1327 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+
+.page-id-1332 .banner-swiper {
+    position: relative !important;
+}
+
+.page-id-1332 .static-content {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    width: 100% !important;
+}
+.swiper-slide {
+  background-size: cover !important;
+  background-position: bottom !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat !important;
+}

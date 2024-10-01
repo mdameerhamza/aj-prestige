@@ -1,0 +1,178 @@
+
+/* Apply the animation to your banner heading */
+
+/* @keyframes cinematicInOut {
+    0% {
+      text-shadow: 0 0 1em white;
+      opacity: 0;
+    }
+    25% {
+      text-shadow: 0 0 0 white;
+      opacity: 1;
+    }
+    75% {
+      text-shadow: 0 0 0 white;
+      opacity: 1;
+    }
+    100% {
+      text-shadow: 0 0 1em white;
+      opacity: 1;
+      color: #fff;
+    }
+  } */
+.mainn-banner h1 {
+    /* color: transparent; */
+    position: absolute;
+    text-align: center;
+    /* left: 0;
+    right: 0;
+    margin: auto; */
+    opacity: 1;
+  }
+
+
+
+/* Apply the animation to your small heading */
+  @keyframes titleAnimation {
+    0% {
+      opacity: 0;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+      clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    }
+    80% {
+      opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    }
+    100% {
+      opacity: 1;
+     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    }
+  }
+
+/* h2 {
+    width: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    opacity: 0;
+  } */
+
+
+
+
+
+/* Apply the animation to your paragraphs */
+
+  @keyframes revealText {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 0.6;
+      transform: translateY(0);
+    }
+  }
+  
+  
+   /* p {
+    opacity: 0;
+    overflow: hidden;
+  } */
+  
+
+
+/* Apply the animation to your images */
+  @keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1); 
+      }
+  }
+  /* .animate-custom{
+    opacity: 0;
+} */
+
+
+
+
+  /* p.animate {
+    opacity: 0.6;
+    animation: revealText 0.5s linear forwards;
+  }
+  h2.animate {
+    opacity: 1;
+    animation: titleAnimation 1s linear 1 forwards;
+  }
+  .mainn-banner h1.animate {
+    opacity: 1;
+    animation: cinematicInOut 5s linear 1 forwards;
+  }
+  img.animate {
+    opacity: 1;
+    animation: fadeOut 0.5s ease-in-out forwards; 
+  } */
+
+
+
+
+
+
+
+
+
+  /* Define base animation for all elements */
+.animation-custom {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Define zoom and fade-in animation for h2 elements */
+/* .animation-custom.animate-h2 {
+  opacity: 0;
+  transform: scale(0.8);
+} */
+
+/* Define zoom and fade-in animation for p elements */
+/* .animation-custom.animate-p {
+  opacity: 0;
+  transform: scale(0.8);
+} */
+
+/* Define zoom and fade-in animation for img elements */
+/* .animation-custom.animate-img {
+  opacity: 0;
+  transform: scale(0.8);
+} */
+
+/* Trigger animation when the element is in the viewport */
+/* .animation-custom.animate-h2.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animation-custom.animate-p.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animation-custom.animate-img.animate {
+  opacity: 1;
+  transform: scale(1);
+} */
+
+.animate {
+  opacity: 1;
+  transform: scale(1);
+}
